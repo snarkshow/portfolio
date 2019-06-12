@@ -1,0 +1,21 @@
+.logo{
+    color: $mainRed;
+}
+
+.topBar{
+    display: flex;
+    font-family: $mainFont;
+    font-size: $paraSmall;
+    justify-content: space-between;
+    text-transform: uppercase;
+    a{
+        color: $mainWhite;
+        margin: 0 10px;
+    }
+}
+
+nav,
+.siteNav,
+.socialNav{
+    display: flex;
+}

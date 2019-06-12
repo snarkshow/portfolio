@@ -1,0 +1,34 @@
+header{
+    background-color: #1f1f1f;
+    height: 100vh;
+    position: relative;
+}
+
+.headerText{
+    position: absolute; left: 200px; bottom: 200px;
+}
+
+h1{
+    color: $mainWhite;
+    font-family: $mainFont;
+    font-size: $h1Size;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    .h1Red{
+        color: $mainRed;
+        display: block;
+        font-size: $para;
+        letter-spacing: 3px;
+        margin: 10px 0;
+    }
+}
+
+.tagline{
+    color: $mainGrey;
+    font-family: $mainFont;
+    font-size: $para;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
