@@ -1,0 +1,62 @@
+.about{
+    background-color: $darkGrey;
+    padding: 100px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.aboutWrapper{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    z-index: 20;
+    ;
+    .headShot{
+        margin-right: 25px;
+        width: calc(30% - 25px);
+        z-index: 20;
+    }
+    .bio{
+        color: $mainWhite;
+        margin-left: 25px;
+        width: calc(60% - 25px);
+        z-index: 20;
+    }
+}
+
+.bio{
+    h2{
+        font-family: $mainFont;
+        font-size: $h2Size;
+        font-weight: lighter;
+        letter-spacing: 3px;
+        .h2Span{
+            @include redSpan(2px);
+        }
+    }
+    p{
+        font-family: $bodyFont;
+        font-size: $para;
+        line-height: 1.75
+    }
+    .bioSpan{
+            @include redSpan(2px);
+            text-transform: uppercase;
+        }
+    
+}
+
+.aboutOverlay{
+    background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
+    position: absolute; top: 0; bottom: 0; left: 0;
+    width: 50%;
+    z-index: 10;
+}
+
+.aboutOverlay2{
+    background: linear-gradient(-45deg, transparent 70%, $mainTeal 70.5%, transparent 70.5%);
+    position: absolute; top: 0; bottom: 0; right: 0;
+    width: 100%;
+    z-index: 10;
+}
+

@@ -1,9 +1,11 @@
 // COLOURS
 
-$mainBlack: #272727;
+$mainBlack: #141414;
 $mainRed:  #E84855;
-$mainWhite: #c9c9c9;
+$mainWhite: #fff5f5;
 $mainGrey: #838383;
+$mainTeal: #00B4A3;
+$darkGrey: #212121;
 
 // FONTS
 
@@ -25,3 +27,11 @@ $h6Size: 1.20rem;
 $para: 1.00rem;
 
 $paraSmall: 0.83rem;
+
+@mixin redSpan($spacing){
+    color: $mainRed;
+    display: block;
+    font-size: $para;
+    letter-spacing: $spacing;
+    margin: 10px 0;
+}

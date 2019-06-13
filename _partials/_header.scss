@@ -4,8 +4,20 @@ header{
     position: relative;
 }
 
+.headerOverlay{
+    background: linear-gradient(-45deg, transparent 20%, $mainRed 20.5%, transparent 21%, transparent 35%, $mainRed 45.5%, transparent 46%);
+    position: absolute; top: 0; bottom: 0; right: 0;
+    width: 650px;
+}
+
+.headerOverlay2{
+    background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 20%, $mainTeal 25.5%, $mainTeal 26%, transparent 27%);
+    position: absolute; top: 0; bottom: 0; left: 0;
+    width: 500px;
+}
+
 .headerText{
-    position: absolute; left: 200px; bottom: 200px;
+    position: absolute; bottom: 250px;
 }
 
 h1{
@@ -27,8 +39,11 @@ h1{
 .tagline{
     color: $mainGrey;
     font-family: $mainFont;
-    font-size: $para;
+    font-size: $h6Size;
     font-weight: lighter;
     letter-spacing: 5px;
     text-transform: uppercase;
+    .tagRed{
+        color: $mainRed;
+    }
 }

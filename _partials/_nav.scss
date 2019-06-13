@@ -5,12 +5,15 @@
 .topBar{
     display: flex;
     font-family: $mainFont;
-    font-size: $paraSmall;
+    font-size: $para;
     justify-content: space-between;
     text-transform: uppercase;
     a{
         color: $mainWhite;
         margin: 0 10px;
+        &:hover{
+            color: $mainRed;
+        }
     }
 }
 
