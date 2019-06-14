@@ -186,7 +186,7 @@ p {
 }
 
 .wrapper {
-  padding: 0 200px;
+  padding: 0 175px;
   margin: 0 auto;
 }
 
@@ -577,7 +577,7 @@ nav,
 }
 
 .projects {
-  background-color: #141414;
+  background-color: #212121;
   height: auto;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -605,18 +605,33 @@ h3 {
   font-size: 2.07rem;
   font-weight: lighter;
   letter-spacing: 3px;
-  margin: 0;
+}
+
+.project1Text {
+  margin-right: 30px;
+  width: calc(50% - 30px);
 }
 
 .projectTags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.project1Text {
-  margin: 0 10px;
-  width: calc(50% - 20px);
+.projectTags .projectTagItem {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.projectText {
+  width: 50%;
 }
 
 .projectDescription {
@@ -640,19 +655,15 @@ h3 {
 }
 
 .laptop .desktopScreen {
-  -webkit-box-shadow: 0px 0px 30px 10px #00B4A3;
-          box-shadow: 0px 0px 30px 10px #00B4A3;
   border: 20px solid #000;
   border-radius: 20px;
   height: 250px;
-  margin: 30px;
+  margin: 30px 0;
   width: 400px;
   padding: 2%;
 }
 
 .laptop .desktopKey {
-  -webkit-box-shadow: 0px 0px 30px 10px #00B4A3;
-          box-shadow: 0px 0px 30px 10px #00B4A3;
   border: 10px solid #000;
   border-radius: 20px;
   margin: 10px;
@@ -661,8 +672,6 @@ h3 {
 }
 
 .mobile {
-  -webkit-box-shadow: 0px 0px 30px 10px #00B4A3;
-          box-shadow: 0px 0px 30px 10px #00B4A3;
   border: 15px solid #000;
   border-radius: 20px;
   height: 250px;
@@ -677,6 +686,94 @@ h3 {
   display: flex;
 }
 
+.project6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+  position: relative;
+}
+
+.project6 .project6Tag {
+  color: #E84855;
+}
+
+.project6 .project6Mobile {
+  background: url("../assets/project6_mobile.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+  z-index: 20;
+}
+
+.project6 .project6Laptop {
+  position: absolute;
+  right: 5%;
+}
+
+.project6 .project6Laptop .project6Screen {
+  background: url("../assets/project6_desktop.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.project6 .project6Laptop .project6Key {
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.project4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+  position: relative;
+}
+
+.project4 .project4Tag {
+  color: #00B4A3;
+}
+
+.project4 .project4Mobile {
+  background: url("../assets/project4_mobile.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
+          box-shadow: 0px 0px 30px 5px #00B4A3;
+  position: absolute;
+  bottom: -10%;
+  right: 33%;
+  z-index: 20;
+}
+
+.project4 .project4Laptop {
+  position: absolute;
+  right: 0;
+}
+
+.project4 .project4Laptop .project4Screen {
+  background: url("../assets/project4_desktop.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
+          box-shadow: 0px 0px 30px 5px #00B4A3;
+}
+
+.project4 .project4Laptop .project4Key {
+  -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
+          box-shadow: 0px 0px 30px 5px #00B4A3;
+}
+
 .project1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -685,19 +782,39 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 50px 0;
   position: relative;
 }
 
-.project1 .project1mobile {
-  background: url("../assets/project1_mobile.png");
-  background-size: cover;
-  position: absolute;
-  bottom: -30px;
-  right: 375px;
+.project1 .project1Tag {
+  color: #E84855;
 }
 
-.project1 .project1desktop {
+.project1 .project1Mobile {
+  background: url("../assets/project1_mobile.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+  position: absolute;
+  bottom: -25%;
+  right: 30%;
+  z-index: 20;
+}
+
+.project1 .project1Laptop {
+  position: absolute;
+  right: 0;
+}
+
+.project1 .project1Laptop .project1Screen {
   background: url("../assets/project1_desktop.png");
   background-size: cover;
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.project1 .project1Laptop .project1Key {
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
 }
 /*# sourceMappingURL=styles.css.map */

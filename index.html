@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <header>
+        <header id="home">
             <div class="topBar">
                 <div class="logo">
                     <p>A logo</p>
@@ -46,7 +46,7 @@
         <div class="headerOverlay"></div>
         <div class="headerOverlay2"></div>
         <main>
-            <div class="about">
+            <div class="about" id="about">
                 <div class="wrapper aboutWrapper">
                     <div class="aboutItem headShot">
                         <img src="./assets/2019-Spring-Laura-Chuang-4.jpg"
@@ -78,7 +78,7 @@
                     <div class="container">
                         <div class="item">
                             <div class="hexagon">
-                                <p>HTML</p>
+                                <p>HTML5</p>
                             </div>
                         </div>
                         <div class="item">
@@ -123,11 +123,6 @@
                         </div>
                         <div class="item">
                             <div class="hexagon">
-                                <p>Research</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="hexagon">
                                 <p>Accessibility</p>
                             </div>
                         </div>
@@ -143,13 +138,38 @@
                         </div>
                         <div class="item">
                             <div class="hexagon">
+                                <p>CodePen</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hexagon">
+                                <p>VSCode</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hexagon">
                                 <p>Trello</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hexagon">
+                                <p>Research</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hexagon">
+                                <p>WestlawNext</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hexagon">
+                                <p>LexisNexis</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="projects wrapper">
+            <div class="projects wrapper" id="work">
                 <div class="projectText">
                     <h2>My Projects 
                         <span class="h2Span">(whatcha working on?)</span>
@@ -158,24 +178,78 @@
                     <p>I'm always looking to challenge myself with new frameworks and languages, but I also want to know the basics of HTML, CSS and Javascript like the back of my hand.</p>
                     <p>I've been able to make some pretty neat stuff, and I'm proud of every single project on this page.</p>
                 </div>
-                <div class="project1">
-                    <h3>Single Page PSD Conversion</h3>
-                    <div class="projectTags">
-                        <p class="tagItem">HTML</p>
-                        <p class="tagItem">CSS</p>
-                        <p class="tagItem">Responsive Design</p>
-                        <p class="tagItem">Accessibility</p>
-                    </div>
+                <div class="project6" id="project6">
+                    <h3 class="project6Title">Autocomplete</h3>
                     <div class="projectDescription">
-                        <div class="project1Text">
-                            <p>A PSD design converted into a single page site. This responsive website was coded using HTML and CSS, without the
-                                use of layout tools such as Flexbox or Grid. </p>
+                        <div class="projectText">
+                            <p>An agency-style project built to the specifications of a client brief.</p>
+                            <p>This retro-styled React app uses the Datamuse API for a functional autocomplete engine that returns different suggestions based on user input.  This team project took just over a week to complete and includes several fun easter eggs that go beyond our minimum product.</p>
+                            <ul class="projectTags">
+                                <li class="projectTagItem project6Tag">React</li>
+                                <li class="projectTagItem project6Tag">JSX</li>
+                                <li class="projectTagItem project6Tag">Javascript</li>
+                                <li class="projectTagItem project6Tag">REST APIs</li>
+                                <li class="projectTagItem project6Tag">Fun with friends</li>
+                            </ul>
                         </div>
                         <div class="visuals">
-                            <div class="project1mobile mobile"></div>
-                            <div class="laptop">
-                                <div class="desktopScreen project1desktop"></div>
-                                <div class="desktopKey"></div>
+                            <div class="mobile project6Mobile"></div>
+                            <div class="laptop project6Laptop">
+                                <div class="desktopScreen project6Screen"></div>
+                                <div class="desktopKey project6Key"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                </div>
+                <div class="project4" id="project4">
+                    <h3 class="project4Title">Feels Like 45</h3>
+                    <div class="projectDescription">
+                        <div class="projectText">
+                            <p>A paired programming project using Javascript and APIs.</p> 
+                            <p>This web app maps out City of Toronto cooling centres that are made available when the City declares an Extreme Heat alert. The app also uses OpenStreetMaps, Leaflet JS and the Dark Sky weather API.</p>
+                            <ul class="projectTags">
+
+                                <li class="projectTagItem project4Tag">Javascript</li>
+                                <li class="projectTagItem project4Tag">REST APIs</li>
+                                <li class="projectTagItem project4Tag">Paired programming</li>
+                                <li class="projectTagItem project4Tag">Open data</li>
+                                <li class="projectTagItem project4Tag">Civic tech</li>
+                                <li class="projectTagItem project4Tag">Man it's a hot one</li>
+                            </ul>
+                        </div>
+                        <div class="visuals">
+                            <div class="project4Mobile mobile"></div>
+                            <div class="laptop project4Laptop">
+                                <div class="desktopScreen project4Screen"></div>
+                                <div class="desktopKey project4Key"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                </div>
+                <div class="project1" id="project1">
+                    <h3 class="project1Title">Single Page PSD Conversion</h3>
+                    <div class="projectDescription">
+                        <div class="project1Text">
+                            <p>A PSD design converted into a single page site.</p>
+                            <p>I built this responsive website using HTML and CSS, without the
+                                use of layout tools such as Flexbox or Grid. </p>
+                            <ul class="projectTags">
+                                <li class="projectTagItem project1Tag">HTML5</li>
+                                <li class="projectTagItem project1Tag">CSS</li>
+                                <li class="projectTagItem project1Tag">Floats</li>
+                                <li class="projectTagItem project1Tag">Responsive design</li>
+                                <li class="projectTagItem project1Tag">First completed bootcamp project</li>
+                            </ul>
+                        </div>
+                        <div class="visuals">
+                            <div class="project1Mobile mobile"></div>
+                            <div class="laptop project1Laptop">
+                                <div class="desktopScreen project1Screen"></div>
+                                <div class="desktopKey project1Key"></div>
                             </div>
                         </div>
                     </div>
