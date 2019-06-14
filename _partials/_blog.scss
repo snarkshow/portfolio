@@ -1,0 +1,39 @@
+.blog{
+    background-color: $darkGrey;
+    height:100vh;
+    position: relative;
+
+}
+
+.blogOverlay{
+    background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
+    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+
+}
+
+.blogGrid{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .blogItem{
+        
+        margin: 10px;
+        width: calc(33.3% - 20px);
+    }
+}
+
+.blogImage{
+    background-color: purple;
+    width: 300px;
+    height: 300px;
+}
+
+.blog h2{
+    @include headings($h2Size);
+    text-align: center;
+    margin: 0 auto;
+    .h2Span{
+        @include redSpan(2px);
+    }
+}
+

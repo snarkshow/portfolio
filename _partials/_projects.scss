@@ -3,15 +3,13 @@
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
     h2{
         @include headings($h2Size);
-
         .h2Span{
             @include redSpan(2px);
-            
         }
     }
-    
 }
 
 h3{
@@ -31,7 +29,22 @@ h3{
         font-size: $para;
         letter-spacing: 2px;
         line-height: 1.5;
-        // text-shadow: 0.5px 0.5px 1px $mainGrey;
+        text-transform: uppercase;
+    }
+}
+
+
+.projectLinks {
+    display:flex;
+    a{
+        border: 1px solid $mainWhite;
+        color:$mainWhite;
+        font-family: $bodyFont;
+        font-size: $para;
+        letter-spacing: 2px;
+        line-height: 2;
+        margin-right: 20px;
+        padding: 5px;
         text-transform: uppercase;
     }
 }
@@ -66,6 +79,27 @@ h3{
     }
 }
 
+.introDescription{
+    justify-content: space-between;
+}
+
+
+.laptop{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .introScreen{
+        box-shadow: 0px 0px 30px 10px $mainRed, 0px 0px 45px 15px $mainTeal, ;
+        height: auto;
+        margin: 20px 0;
+        width: 600px;
+        padding: 3%;
+    }
+    .introKey{
+
+    }
+}
+
 .mobile{
     border: 15px solid #000;
     border-radius: 20px;
@@ -80,10 +114,7 @@ h3{
 }
 
 .project6{
-    display:flex;
-    flex-direction: column;
-    margin: 50px 0;
-    position: relative;
+    @include projects();
     .project6Tag{
         color: $mainRed;
     }
@@ -107,11 +138,18 @@ h3{
     }
 }
 
+.project6Links a:hover{
+    box-shadow: 0px 0px 30px 5px $mainRed;
+}
+.project4Links a:hover{
+    box-shadow: 0px 0px 30px 5px $mainTeal;
+}
+.project1Links a:hover{
+    box-shadow: 0px 0px 30px 5px $mainRed;
+}
+
 .project4{
-    display:flex;
-    flex-direction: column;
-    margin: 50px 0;
-    position: relative;
+    @include projects();
     .project4Tag{
         color: $mainTeal;
     }
@@ -137,10 +175,7 @@ h3{
 }
 
 .project1{
-    display:flex;
-    flex-direction: column;
-    margin: 50px 0;
-    position: relative;
+    @include projects();
     .project1Tag{
         color: $mainRed;
     }

@@ -43,3 +43,10 @@ $paraSmall: 0.83rem;
     letter-spacing: $spacing;
     margin: 10px 0;
 }
+
+@mixin projects(){
+    display:flex;
+    flex-direction: column;
+    margin: 40px 0;
+    position: relative;
+}

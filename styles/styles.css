@@ -581,6 +581,7 @@ nav,
   height: auto;
   padding-top: 100px;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .projects h2 {
@@ -630,6 +631,24 @@ h3 {
   text-transform: uppercase;
 }
 
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectLinks a {
+  border: 1px solid #fff5f5;
+  color: #fff5f5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-right: 20px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
 .projectText {
   width: 50%;
 }
@@ -671,6 +690,34 @@ h3 {
   padding: 0;
 }
 
+.introDescription {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.laptop {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.laptop .introScreen {
+  -webkit-box-shadow: 0px 0px 30px 10px #E84855, 0px 0px 45px 15px #00B4A3;
+          box-shadow: 0px 0px 30px 10px #E84855, 0px 0px 45px 15px #00B4A3;
+  height: auto;
+  margin: 20px 0;
+  width: 600px;
+  padding: 3%;
+}
+
 .mobile {
   border: 15px solid #000;
   border-radius: 20px;
@@ -694,7 +741,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px 0;
+  margin: 40px 0;
   position: relative;
 }
 
@@ -730,6 +777,21 @@ h3 {
           box-shadow: 0px 0px 30px 5px #E84855;
 }
 
+.project6Links a:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.project4Links a:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
+          box-shadow: 0px 0px 30px 5px #00B4A3;
+}
+
+.project1Links a:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px #E84855;
+          box-shadow: 0px 0px 30px 5px #E84855;
+}
+
 .project4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,7 +800,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px 0;
+  margin: 40px 0;
   position: relative;
 }
 
@@ -782,7 +844,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px 0;
+  margin: 40px 0;
   position: relative;
 }
 
@@ -816,5 +878,60 @@ h3 {
 .project1 .project1Laptop .project1Key {
   -webkit-box-shadow: 0px 0px 30px 5px #E84855;
           box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.blog {
+  background-color: #212121;
+  height: 100vh;
+  position: relative;
+}
+
+.blogOverlay {
+  background: linear-gradient(45deg, transparent 15%, #00B4A3 15%, transparent 15.5%, transparent 45.5%, #E84855 46%, transparent 46%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blogGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogGrid .blogItem {
+  margin: 10px;
+  width: calc(33.3% - 20px);
+}
+
+.blogImage {
+  background-color: purple;
+  width: 300px;
+  height: 300px;
+}
+
+.blog h2 {
+  color: #fff5f5;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.49rem;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blog h2 .h2Span {
+  color: #E84855;
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */
