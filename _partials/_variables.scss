@@ -28,6 +28,14 @@ $para: 1.00rem;
 
 $paraSmall: 0.83rem;
 
+@mixin headings($size){
+    color: $mainWhite;
+    font-family: $mainFont;
+    font-size: $size;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
 @mixin redSpan($spacing){
     color: $mainRed;
     display: block;
