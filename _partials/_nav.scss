@@ -5,6 +5,7 @@
 
 
 .topBar{
+    background-color: $darkGrey;
     display: flex;
     font-family: $mainFont;
     font-size: $para;
@@ -51,8 +52,4 @@ nav,
     top: 0;
     left: 0;
     width: 100%; 
-}
-
-.black{
-    background-color: $darkGrey;
 }
