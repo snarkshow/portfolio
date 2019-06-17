@@ -1,0 +1,61 @@
+.contact{
+    background-color: $darkGrey;
+     h2{
+        @include headings($h2Size);
+        margin: 0;
+        span {
+            @include redSpan(2px);
+        }
+    }
+    h5{
+        @include headings($h5Size);
+        color: $mainRed;
+    }
+}
+
+.contactNav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    .contactTitle{
+        width: 50%;
+    }
+    .contactIcons{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        a{
+            color: $mainWhite;
+                &:hover{
+                color: $mainRed;
+            }
+        }
+    }
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+}
+
+input,
+textarea{
+    margin: 10px 0;
+    padding: 5px;
+    &::placeholder{
+        @include headings($h6Size);
+        color: $mainBlack;
+    }
+    &:focus{
+        box-shadow: 0 0 10px $mainTeal;
+    }
+}
+
+input, select, textarea{
+    @include headings($para);
+    color: $darkGrey;
+}

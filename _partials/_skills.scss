@@ -3,14 +3,14 @@
     background-color: $darkGrey;
     box-shadow: 0 0 10px 10px $darkGrey;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 
 .container{   
     background-color: $darkGrey;
     justify-content:center;
     display: grid;
-    grid-template-columns: repeat(10, 100px);
+    grid-template-columns: repeat(10, 85px);
     grid-column-gap: 5px;
     width: 80%;
     // padding: 10px auto;
@@ -50,7 +50,7 @@
     justify-content: center;
     position: absolute; top: 0; left: 0;
     width: 100%;
-    background: linear-gradient(-30deg, $mainTeal 0%, transparent 35%, $mainTeal 55%,$mainTeal 57%, transparent 85%);
+    background: linear-gradient(-30deg, $mainTeal 0%, transparent 65%);
     -o-transform: skewY(-30deg) rotate(60deg);
     -moz-transform: skewY(-30deg) rotate(60deg);
     -webkit-transform: skewY(-30deg) rotate(60deg);

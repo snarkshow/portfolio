@@ -1,0 +1,31 @@
+.values{
+    background-color: $darkGrey;
+    padding: 100px 0;
+     h2{
+        @include headings($h2Size);
+        span {
+            @include redSpan(2px);
+        }
+    }
+    h5{
+        @include headings($h5Size);
+        color: $mainWhite;
+        margin: 0;
+    }
+    h6{
+        @include headings($h6Size);
+        color: $mainRed;
+        margin: 20px 0;
+    }
+}
+
+.valuesGrid{
+    display:flex;
+    flex-wrap: wrap;
+    .valuesItem{
+        width: 50%;
+        &:nth-child(2n){
+            padding-left: 25px;
+        }
+    }
+}

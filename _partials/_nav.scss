@@ -1,16 +1,15 @@
-.logo{
-    color: $mainRed;
-}
 
 .topBar{
     display: flex;
     font-family: $mainFont;
     font-size: $para;
     justify-content: space-between;
+    position: sticky;
     text-transform: uppercase;
+        z-index: 30;
     a{
         color: $mainWhite;
-        margin: 0 10px;
+        margin: 30px 10px;
         &:hover{
             color: $mainRed;
         }
@@ -21,4 +20,23 @@ nav,
 .siteNav,
 .socialNav{
     display: flex;
+
+    .socialNav{
+        flex-direction: column;
+        margin: 15px 10px;
+    }
+}
+
+.icon{
+    font-size: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky {
+  padding-top: 102px;
 }

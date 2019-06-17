@@ -1,31 +1,33 @@
 .blog{
     background-color: $darkGrey;
-    height:100vh;
     position: relative;
-
 }
 
-.blogOverlay{
-    background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
-    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+// .blogOverlay{
+//     background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
+//     position: absolute; top: 0; right: 0; bottom: 0; left: 0;
 
-}
+// }
 
 .blogGrid{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin:  0;
     .blogItem{
-        
-        margin: 10px;
+        flex-wrap: wrap;
+        margin: 30px 10px;
+        min-width: 300px;
         width: calc(33.3% - 20px);
     }
 }
 
 .blogImage{
-    background-color: purple;
-    width: 300px;
-    height: 300px;
+    // background-color: purple;
+    width: 275px;
+    img{
+        height: 200px;
+    }
 }
 
 .blog h2{
@@ -34,6 +36,18 @@
     margin: 0 auto;
     .h2Span{
         @include redSpan(2px);
+    }
+}
+
+.blogTitle {
+    h4{
+        @include headings($h5Size);
+        margin: 0;
+    }
+    h5{
+        @include headings($h5Size);
+        color:$mainRed;
+        margin-top: 10px;
     }
 }
 
