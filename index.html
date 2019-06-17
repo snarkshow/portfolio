@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <header id="home">
-            <div class="topBar">
+        <section class="navigationBar">
+            <div class="topBar fixed-header" id="navBar">
                 <div class="logo">
                     <p>LC</p>
                 </div>
@@ -29,25 +29,29 @@
                         <li><a href="#blog">Shower Thoughts</a></li>
                         <li><a href="#contact">Can We Talk?</a></li>
                     </ul>
-                    <ul class="socialNav">
-                        <li>
-                            <a href="">
-                                <i class="fab fa-github-square icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-twitter-square icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-medium icon"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </nav>
             </div>
+            <ul class="socialNav">
+                <li>
+                    <a href="">
+                        <i class="fab fa-github-square icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter-square icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-medium icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        
+        <header id="home">
             <div class="wrapper">
                 <div class="headerText">
                     <h1>
@@ -376,6 +380,7 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
         <script>
             $(function () {
                $('a[href^="#"]').SmoothScroll({
@@ -383,6 +388,14 @@
                     easing: 'linear'
                 });
             });   
+        </script>
+        <script>
+            $(window).scroll(function () {
+                let scroll = $(window).scrollTop();
+                if (scroll >= 500) {
+                    $(".topBar").addClass("black");
+                }
+            });
         </script>
     </body>
 </html>

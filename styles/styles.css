@@ -253,14 +253,14 @@ h1 .h1Red {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40px;
+  height: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  width: 40px;
+  width: 35px;
 }
 
 .logo p {
@@ -274,6 +274,12 @@ h1 .h1Red {
           transform: rotate(-45deg);
 }
 
+.navigationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .topBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,15 +289,13 @@ h1 .h1Red {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
   text-transform: uppercase;
   z-index: 30;
 }
 
 .topBar a {
   color: #fff5f5;
-  margin: 30px 10px;
+  margin: 10px 10px;
 }
 
 .topBar a:hover {
@@ -299,35 +303,50 @@ h1 .h1Red {
 }
 
 nav,
-.siteNav,
-.socialNav {
+.siteNav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 30px;
 }
 
-nav .socialNav,
-.siteNav .socialNav,
-.socialNav .socialNav {
+.socialNav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 15px 10px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 30;
+}
+
+.socialNav a {
+  color: #fff5f5;
+  margin: 10px;
+}
+
+.socialNav a:hover {
+  color: #E84855;
 }
 
 .icon {
   font-size: 2rem;
 }
 
-.sticky {
+.fixed-header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
 }
 
-.sticky {
-  padding-top: 102px;
+.black {
+  background-color: #212121;
 }
 
 .about {

@@ -55,11 +55,11 @@ h1{
     align-items: center;
     border: 2px solid $mainRed;
     display: flex;
-    height: 40px;
+    height: 35px;
     justify-content: center;
     margin: 20px;
     transform: rotate(45deg);
-    width: 40px;
+    width: 35px;
     p{
         @include headings($para);
         color: $mainRed;
