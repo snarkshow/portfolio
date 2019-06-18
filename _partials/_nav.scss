@@ -57,6 +57,10 @@ nav,
     display: none;
 }
 
+.mobileMenu{
+    display: none;
+}
+
 @media (max-width: 1200px){} 
 @media (max-width: 950px){
     .topBar{
@@ -64,7 +68,6 @@ nav,
     }
 } 
 @media (max-width: 800px){
-
 
     .topBar{
         display: flex;
@@ -82,7 +85,12 @@ nav,
     .topBar{
         font-size: $para;
     }
-    .siteNav{
+
+    .desktopNav{
+        display: none;
+    }
+
+    .mobileMenu{
         flex-direction: column;
         display: none;
         li{
@@ -102,7 +110,7 @@ nav,
     }
 
 } 
-@media (max-width: 480px){} 
+
 @media (max-width: 320px){
     .socialNav{
    
