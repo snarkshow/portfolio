@@ -40,15 +40,12 @@ h1{
 }
 
 .tagline{
-    color: $mainGrey;
-    font-family: $mainFont;
-    font-size: $h6Size;
-    font-weight: lighter;
-    letter-spacing: 5px;
+    color: $mainRed;
+    display: block;
+    font-size: $para;
+    letter-spacing: 3px;
+    margin: 10px 0;
     text-transform: uppercase;
-    .tagRed{
-        color: $mainRed;
-    }
 }
 
 .logo{
@@ -64,5 +61,29 @@ h1{
         @include headings($para);
         color: $mainRed;
         transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 690px){
+    .h1span{
+        display: block;
+    }
+    .headerText{
+        position: absolute; bottom: 200px;
+    }
+}
+
+@media(max-width: 480px){
+
+    h1{
+        font-size: $h3Size;
+    }
+
+    .block{
+        display: block;
+    }
+
+    .headerText{
+        position: absolute; bottom: 15 0px;
     }
 }

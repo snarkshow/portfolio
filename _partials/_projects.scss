@@ -16,7 +16,7 @@ h3{
     @include headings($h3Size);
 }
 
-.project1Text{
+.projectText{
     margin-right: 30px;
     width: calc(50% - 30px);
 }
@@ -49,15 +49,9 @@ h3{
     }
 }
 
-.projectText{
-    width: 50%;
-}
-
 .projectDescription{
     display: flex;
 }
-
-
 
 .introDescription{
     justify-content: space-between;
@@ -171,12 +165,7 @@ h3{
 .project6Links a:hover{
     box-shadow: 0px 0px 30px 5px $mainRed;
 }
-.project4Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainTeal;
-}
-.project1Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainRed;
-}
+
 
 .project4{
     @include projects();
@@ -201,18 +190,48 @@ h3{
             box-shadow: 0px 0px 30px 5px $mainTeal;
         }
     }
+}
+
+.project4Links a:hover{
+    box-shadow: 0px 0px 30px 5px $mainTeal;
+}
+
+.project3{
+    @include projects();
+    .project3Tag{
+        color: $mainRed;
+    }
+    .project3Mobile{
+        background: url("../assets/project3_mobile.png");
+        background-size: cover;
+        box-shadow: 0px 0px 30px 5px $mainRed;
+        position: absolute; bottom: -10%; right: 55%;
+        z-index: 20;
+    }
+    .project3Laptop{
+        position: absolute; right: 0;
+         .project3Screen{
+            background: url("../assets/project3_desktop.png");
+            background-size: cover;
+            background-position: center center;
+            box-shadow: 0px 0px 30px 5px $mainRed;
+        }
+        .project3Key{
+            box-shadow: 0px 0px 30px 5px $mainRed;
+        }
+    }
    
 }
 
 .project1{
     @include projects();
     .project1Tag{
-        color: $mainRed;
+        color: $mainTeal;
     }
     .project1Mobile{
         background: url("../assets/project1_mobile.png");
         background-size: cover;
-        box-shadow: 0px 0px 30px 5px $mainRed;
+        box-shadow: 0px 0px 30px 5px $mainTeal;
         position: absolute; bottom: -25%; right: 55%;
         z-index: 20;
     }
@@ -221,14 +240,270 @@ h3{
          .project1Screen{
             background: url("../assets/project1_desktop.png");
             background-size: cover;
-            box-shadow: 0px 0px 30px 5px $mainRed;
+            box-shadow: 0px 0px 30px 5px $mainTeal;
         }
         .project1Key{
-            box-shadow: 0px 0px 30px 5px $mainRed;
+            box-shadow: 0px 0px 30px 5px $mainTeal;
         }
     }
    
 }
 
+.project1Links a:hover{
+    box-shadow: 0px 0px 30px 5px $mainRed;
+}
 
+@media (max-width: 1300px){
+
+    .visuals{
+        margin: 0 15px;
+        width: calc(50% - 30px);
+        .desktopKey{
+            border: 10px solid #000;
+            border-radius: 20px;
+            margin: 10px;
+            width: 400px;
+            padding: 0;
+        }
+    }
+
+    .project5{
+        .project5Mobile1{
+            position: absolute; bottom: -10%; right: 65%;
+
+        }
+        .project5Mobile2{
+            position: absolute; bottom: -10%; right: -10%;
+        }
+        .project5Laptop{
+            position: absolute; right: -10%;
+        }
+    }
+
+    .project6{
+        .project6Mobile{      
+            position: absolute; bottom: 0%; right: 0%;
+        }
+        .project6Laptop{
+            position: absolute; right: -10%;
+        }
+    }
+
+    .project4{  
+        .project4Mobile{    
+            position: absolute; bottom: 0%; right: 55%;
+        }
+        .project4Laptop{
+            position: absolute; right: -10%;
+    }
+    }
+    
+    .project3{
+
+    .project3Mobile{
+        position: absolute; bottom: -5%; right: 50%;
+    }
+    .project3Laptop{
+        position: absolute; right: -10%;
+    }
+    }
+
+    .project1{
+    .project1Mobile{
+        position: absolute; bottom: -20%; right: 55%;
+    }
+    .project1Laptop{
+        position: absolute; right: -10%;
+    }
+   
+    }
+}
+
+@media (max-width: 1100px){
+    .projectText{
+        width: 100%;
+    }
+
+    .projectTags{
+        flex-direction: row;
+        flex-wrap: wrap;
+         .projectTagItem{
+            margin-right: 10px;
+            padding: 3px 5px;
+        }
+    }
+    .projectDescription{
+        flex-direction: column;
+    }
+
+     .project5{
+        .project5Mobile1{
+            position: absolute; bottom: 0%; right: 25%;
+
+        }
+        .project5Mobile2{
+            position: absolute; bottom: 10%; right: 60%;
+        }
+        .project5Laptop{
+            position: relative; right: -65%;
+        }
+    }
+    
+    .project6{
+        .project6Mobile{      
+            position: absolute; bottom: 10%; right: 25%;
+        }
+        .project6Laptop{
+            position: relative; right: -65%;
+        }
+    }
+    
+    .project4{  
+        .project4Mobile{    
+            position: absolute; bottom: 10%; right: 25%;
+        }
+        .project4Laptop{
+            position: relative; right: -65%;
+    }
+    }
+
+    .project3{
+
+    .project3Mobile{
+         position: absolute; bottom: 10%; right: 25%;
+    }
+    .project3Laptop{
+        position: relative; right: -65%;
+    }
+    }
+    .project1{
+
+    .project1Mobile{
+         position: absolute; bottom: 10%; right: 25%;
+    }
+    .project1Laptop{
+        position: relative; right: -70%;
+    }
+    }
+
+
+} 
+@media (max-width: 767px){
+
+    .introDescription{
+        width: 100%;
+    }
+    .desktopKey{
+        display: none;
+    }
+
+     .project5{
+        position: relative;
+        .project5Mobile1{
+            position: absolute; bottom: 0%; right: 30%;
+
+        }
+        .project5Mobile2{
+            position: relative; bottom: 0%; right: -60%;
+        }
+        .project5Laptop{
+            display: none;
+        }
+    }
+
+    .project6{
+        .project6Mobile{      
+            position: absolute; bottom: 0%; right: 25%;
+        }
+        .project6Laptop{
+            position: relative; right: -65%;
+        }
+    }
+    
+    .project4{  
+        .project4Mobile{    
+            position: absolute; bottom: 0%; right: 25%;
+        }
+        .project4Laptop{
+            position: relative; right: -65%;
+    }
+    }
+
+    .project3{
+
+    .project3Mobile{
+         position: absolute; bottom: 0%; right: 25%;
+    }
+    .project3Laptop{
+        position: relative; right: -65%;
+    }
+    }
+    .project1{
+
+    .project1Mobile{
+         position: absolute; bottom: 0%; right: 25%;
+    }
+    .project1Laptop{
+        position: relative; right: -70%;
+    }
+    }
+} 
+@media (max-width: 600px){
+
+    .project5{
+        position: relative;
+        .project5Mobile1{
+            position: absolute; bottom: 0%; right: 20%;
+
+        }
+        .project5Mobile2{
+            position: relative; bottom: 0%; right: -80%;
+            width: 150px;
+        }
+        .project5Laptop{
+            display: none;
+        }
+    }
+
+    .project6{
+        .project6Mobile{      
+            display: none
+        }
+        .project6Laptop{
+            position: relative; right: 0%;
+        }
+    }
+    
+    .project4{  
+        .project4Mobile{    
+            display: none
+        }
+        .project4Laptop{
+            position: relative; right: 0%;
+    }
+    }
+
+    .project3{
+
+    .project3Mobile{
+         display: none
+    }
+    .project3Laptop{
+        position: relative; right: 0%;
+    }
+    }
+    .project1{
+
+    .project1Mobile{
+         display: none
+    }
+    .project1Laptop{
+        position: relative; right: 0%;
+    }
+    }
+} 
+@media (max-width: 480px){
+
+} 
+// \@media (max-width: 320px){}
 

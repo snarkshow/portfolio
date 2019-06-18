@@ -21,8 +21,10 @@
                 <div class="logo">
                     <p>LC</p>
                 </div>
+                <button class="toggle-button openMenu">see more</button>
+                <button class="toggle-button closeMenu">see less</button>
                 <nav>
-                    <ul class="siteNav">
+                    <ul class="siteNav mobileMenu">
                         <li><a href="#">Let's Go Home</a> </li>
                         <li><a href="#about">My Whole Deal</a></li>
                         <li><a href="#work">Latest & Greatest</a></li>
@@ -55,9 +57,9 @@
             <div class="wrapper">
                 <div class="headerText">
                     <h1>
-                        <span class="h1Red">oh hey, I didn't see you there,</span>
-                        I'm Laura Chuang</h1>
-                    <p class="tagline">a front-end web developer</p>
+                        <span class="h1Red">oh hey, <span class="block">I didn't see you there,</span></span>
+                        I'm Laura <span class="h1span">Chuang</span></h1>
+                    <p class="tagline">a front-end <span class="block">web developer</span></p>
                 </div>
             </div>
         </header>
@@ -108,15 +110,14 @@
                             <div class="desktopKey introKey"></div>
                         </div>
                     </div>
-                    
-                   
                 </div>
                 <div class="projectItem project5" id="project5">
                     <h3 class="project5Title">a11y 1ist</h3>
                     <div class="projectDescription">
                         <div class="projectText">
                             <p>An accessibility-focused grocery list app.</p>
-                            <p>This mobile-first React app was designed so that users can build a generic grocery list without having to type or scroll.</p>
+                            <p>This mobile-first React app was designed so that users can build a generic grocery list without having to
+                                type or scroll.</p>
                             <div class="projectInfo">
                                 <ul class="projectTags">
                                     <li class="projectTagItem project5Tag">React</li>
@@ -124,7 +125,7 @@
                                     <li class="projectTagItem project5Tag">Firebase</li>
                                     <li class="projectTagItem project5Tag">Accessibility</li>
                                     <li class="projectTagItem project5Tag">Mobile-first</li>
-
+                
                                 </ul>
                                 <ul class="projectLinks project5Links">
                                     <li><a href="https://laurachuang.net/project5/" target="_blank">Live Site</a></li>
@@ -141,8 +142,8 @@
                             </div>
                         </div>
                     </div>
-            
-            
+                
+                
                 </div>
                 <div class="projectItem project6" id="project6">
                     <h3 class="project6Title">Autocomplete</h3>
@@ -210,10 +211,41 @@
             
             
                 </div>
+                <div class="projectItem project3" id="project3">
+                    <h3 class="project3Title">Coffee Culture</h3>
+                    <div class="projectDescription">
+                        <div class="projectText">
+                            <p>An app built with Jquery, Javascript, and Sass.</p>
+                            <p>This guessing game will you memorize all the words that you need to order coffee - in German! Learn as
+                                you go, and find out what you got right.</p>
+                            <div class="projectInfo">
+                                <ul class="projectTags">
+                                    <li class="projectTagItem project3Tag">Javascript</li>
+                                    <li class="projectTagItem project3Tag">JQuery</li>
+                                    <li class="projectTagItem project3Tag">Sass</li>
+                                    <li class="projectTagItem project3Tag">Eine kaffee, bitte</li>
+                                    
+                                </ul>
+                                <ul class="projectLinks project3Links">
+                                    <li><a href="http://laurachuang.tech/project3_coffeeculture/" target="_blank">Live Site</a></li>
+                                    <li><a href="https://github.com/snarkshow/coffee-culture/" target="_blank">Code on Github</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="visuals">
+                            <div class="project3Mobile mobile"></div>
+                            <div class="laptop project3Laptop">
+                                <div class="desktopScreen project3Screen"></div>
+                                <div class="desktopKey project3Key"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
                 <div class="projectItem project1" id="project1">
                     <h3 class="project1Title">Single Page PSD Conversion</h3>
                     <div class="projectDescription">
-                        <div class="project1Text">
+                        <div class="projectText">
                             <p>A PSD design converted into a single page site.</p>
                             <p>I built this pixel-perfect responsive website using HTML and CSS, without the
                                 use of layout tools such as Flexbox or Grid. </p>
@@ -241,37 +273,7 @@
                     </div>
         
                 </div>
-                <div class="projectItem project3" id="project3">
-                    <h3 class="project3Title">Single Page PSD Conversion</h3>
-                    <div class="projectDescription">
-                        <div class="project3Text">
-                            <p>A PSD design converted into a single page site.</p>
-                            <p>I built this pixel-perfect responsive website using HTML and CSS, without the
-                                use of layout tools such as Flexbox or Grid. </p>
-                            <div class="projectInfo">
-                                <ul class="projectTags">
-                                    <li class="projectTagItem project3Tag">HTML5</li>
-                                    <li class="projectTagItem project3Tag">CSS</li>
-                                    <li class="projectTagItem project3Tag">Floats</li>
-                                    <li class="projectTagItem project3Tag">Responsive design</li>
-                                    <li class="projectTagItem project3Tag">First bootcamp project</li>
-                                </ul>
-                                <ul class="projectLinks project3Links">
-                                    <li><a href="http://laurachuang.tech/project3_coffeeculture/" target="_blank">Live Site</a></li>
-                                    <li><a href="https://github.com/snarkshow/coffee-culture/" target="_blank">Code on Github</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="visuals">
-                            <div class="project1Mobile mobile"></div>
-                            <div class="laptop project3Laptop">
-                                <div class="desktopScreen project3Screen"></div>
-                                <div class="desktopKey project3Key"></div>
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
+                
             </div>
             <div class="skillsWrapper">
                 <div class="skills">
@@ -447,19 +449,40 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
         <script>
             $(function () {
-               $('a[href^="#"]').SmoothScroll({
-                    duration: 2000,
-                    easing: 'linear'
+            //    $('a[href^="#"]').SmoothScroll({
+            //         duration: 2000,
+            //         easing: 'linear'
+            //     }),
+                $(window).scroll(function () {
+                    let scroll = $(window).scrollTop();
+                    if (scroll >= 500) {
+                        $(".topBar").addClass("black");
+                    }
                 });
+                $(".closeMenu").hide();
+                $(".mobileMenu").hide();
+                $(".openMenu").on("click", function () {
+                    // console.log(`clicked`);
+                       $(".mobileMenu").slideToggle("slow");
+                       $(".openMenu").hide();
+                       $(".closeMenu").show();
+                   });
+                $(".closeMenu").on("click", function () {
+                    // console.log(`clicked`);
+                     $(".mobileMenu").slideToggle("slow");
+                       $(".closeMenu").hide();
+                       $(".openMenu").show();
+                   });
+                // $(".drop-down a").on("click", function () {
+                //     $(".drop-down").slideToggle("slow");
+                //     $(".close").hide();
+                //     $(".open").show();
+                // });
+
             });   
         </script>
         <script>
-            $(window).scroll(function () {
-                let scroll = $(window).scrollTop();
-                if (scroll >= 500) {
-                    $(".topBar").addClass("black");
-                }
-            });
+            
         </script>
     </body>
 </html>
