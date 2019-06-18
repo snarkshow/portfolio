@@ -47,19 +47,19 @@
     
 }
 
-.aboutOverlay{
-    background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
-    position: absolute; top: 0; bottom: 0; left: 0;
-    width: 50%;
-    z-index: 10;
-}
+// .aboutOverlay{
+//     background: linear-gradient(45deg, transparent 15%, $mainTeal 15%, transparent 15.5%, transparent 45.5%, $mainRed 46%, transparent 46%);
+//     position: absolute; top: 0; bottom: 0; left: 0;
+//     width: 50%;
+//     z-index: 10;
+// }
 
-.aboutOverlay2{
-    background: linear-gradient(-45deg, transparent 70%, $mainTeal 70.5%, transparent 70.5%);
-    position: absolute; top: 0; bottom: 0; right: 0;
-    width: 100%;
-    z-index: 10;
-}
+// .aboutOverlay2{
+//     background: linear-gradient(-45deg, transparent 70%, $mainTeal 70.5%, transparent 70.5%);
+//     position: absolute; top: 0; bottom: 0; right: 0;
+//     width: 100%;
+//     z-index: 10;
+// }
 
 @media(max-width:950px){
     .aboutWrapper{
