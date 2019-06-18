@@ -29,3 +29,15 @@
         }
     }
 }
+
+@media (max-width: 500px){
+    .valuesGrid{
+        flex-direction: column;
+        .valuesItem{
+        width: 100%;
+        &:nth-child(1n){
+            padding: 10px;
+        }
+        }
+    }
+}
