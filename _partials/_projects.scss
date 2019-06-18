@@ -390,8 +390,9 @@ h3{
 } 
 @media (max-width: 767px){
 
-    .introDescription{
-        width: 100%;
+    .visuals{
+        margin: 0 auto;
+        width: calc(100% - 30px);
     }
     .desktopKey{
         display: none;
@@ -400,11 +401,11 @@ h3{
      .project5{
         position: relative;
         .project5Mobile1{
-            position: absolute; bottom: 0%; right: 30%;
+            position: absolute; bottom: 0%; right: 50%;
 
         }
         .project5Mobile2{
-            position: relative; bottom: 0%; right: -60%;
+            position: relative; bottom: 0%; right: -50%;
         }
         .project5Laptop{
             display: none;
@@ -413,51 +414,52 @@ h3{
 
     .project6{
         .project6Mobile{      
-            position: absolute; bottom: 0%; right: 25%;
+            position: absolute; bottom: 0%; left: -10%;
         }
         .project6Laptop{
-            position: relative; right: -65%;
+            position: relative; right: -30%;
         }
     }
     
     .project4{  
-        .project4Mobile{    
-            position: absolute; bottom: 0%; right: 25%;
+        .project4Mobile{      
+            position: absolute; bottom: 0%; left: -10%;
         }
         .project4Laptop{
-            position: relative; right: -65%;
+            position: relative; right: -30%;
+        }
     }
     }
 
     .project3{
 
-    .project3Mobile{
-         position: absolute; bottom: 0%; right: 25%;
-    }
-    .project3Laptop{
-        position: relative; right: -65%;
-    }
+     .project3Mobile{      
+            position: absolute; bottom: 0%; left: -10%;
+        }
+        .project3Laptop{
+            position: relative; right: -30%;
+        }
     }
     .project1{
 
-    .project1Mobile{
-         position: absolute; bottom: 0%; right: 25%;
-    }
-    .project1Laptop{
-        position: relative; right: -70%;
-    }
-    }
-} 
+     .project1Mobile{      
+            position: absolute; bottom: 0%; left: -10%;
+        }
+        .project1Laptop{
+            position: relative; right: -30%;
+        }
+}
+
 @media (max-width: 600px){
 
     .project5{
         position: relative;
         .project5Mobile1{
-            position: absolute; bottom: 0%; right: 20%;
+            position: absolute; bottom: 0%; right: 50%;
 
         }
         .project5Mobile2{
-            position: relative; bottom: 0%; right: -80%;
+            position: relative; bottom: 0%; right: -50%;
             width: 150px;
         }
         .project5Laptop{
@@ -502,8 +504,91 @@ h3{
     }
     }
 } 
-@media (max-width: 480px){
+@media (max-width: 500px){
 
-} 
-// \@media (max-width: 320px){}
+    .visuals .laptop .desktopScreen {
+        width: 350px;
+    }
 
+    .project6{  
+        .project6Laptop{
+            position: relative; left: 0%;
+        }
+        .project6Screen{
+           width: 100%
+     }
+    }
+    
+    .project4{  
+        .project4Laptop{
+            position: relative; left: 0%;
+        }
+        .project4Screen{
+           width: 100%
+     }
+    }
+
+    .project3{  
+        .project3Laptop{
+            position: relative; left: 0%;
+        }
+        .project3Screen{
+           width: 100%;
+     }
+    }
+
+    .project1{  
+        .project1Laptop{
+            position: relative; left: 0%;
+            
+        }
+        .project1Screen{
+            width: 100%
+     }
+    }
+
+}
+
+@media (max-width: 320px){
+    .visuals .laptop .desktopScreen {
+        width: 300px;
+    }
+
+    .project6{  
+        .project6Laptop{
+            position: relative; left: -20%;
+        }
+        .project6Screen{
+           width: 100%
+     }
+    }
+    
+    .project4{  
+        .project4Laptop{
+            position: relative; left: -20%;
+        }
+        .project4Screen{
+           width: 100%
+     }
+    }
+
+    .project3{  
+        .project3Laptop{
+            position: relative; left: -20%;
+        }
+        .project3Screen{
+           width: 100%;
+     }
+    }
+
+    .project1{  
+        .project1Laptop{
+            position: relative; left: -20%;
+            
+        }
+        .project1Screen{
+            width: 100%
+     }
+    }
+}
+ 
