@@ -1499,6 +1499,26 @@ h3 {
   .project1 .project1Screen {
     width: 100%;
   }
+  .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectLinks a {
+    border: 1px solid #fff5f5;
+    color: #fff5f5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1824,5 +1844,60 @@ input, select, textarea {
   font-weight: lighter;
   letter-spacing: 3px;
   color: #212121;
+}
+
+@media (max-width: 500px) {
+  .contactNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .contactNav h5 {
+    margin: 10px 0;
+  }
+  .contact form {
+    width: 100%;
+  }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #fff5f5;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.83rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #141414;
+  }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #fff5f5;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.83rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #141414;
+  }
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    color: #fff5f5;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.83rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #141414;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #fff5f5;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.83rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #141414;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

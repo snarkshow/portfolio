@@ -547,6 +547,22 @@ h3{
      }
     }
 
+    .projectLinks {
+    display:flex;
+    flex-direction: column;
+    a{
+        border: 1px solid $mainWhite;
+        color:$mainWhite;
+        font-family: $bodyFont;
+        font-size: $para;
+        letter-spacing: 2px;
+        line-height: 2;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+}
+
 }
 
 @media (max-width: 320px){

@@ -59,3 +59,28 @@ input, select, textarea{
     @include headings($para);
     color: $darkGrey;
 }
+
+@media (max-width: 500px){
+    .contactNav{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        h5{
+            margin: 10px 0;
+        }
+    }
+    .contact form{
+       width: 100%;
+    }   
+
+    input,
+    textarea{
+
+    &::placeholder{
+        @include headings($paraSmall);
+        color: $mainBlack;
+    }
+ 
+}
+
+}
