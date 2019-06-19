@@ -77,18 +77,16 @@ h3{
 
 .visuals{
     position: relative;
-    background-color: blue;
+    // background-color: blue;
     .visuals1{
-        border: 1px solid white;
+        border: 1px solid $mainWhite;
         width: 400px;
         height: 400px;
         position: relative; left: 0%;
         transform: rotate(45deg);
         overflow: hidden;
         .visualsBackground{
-            // background:url("../assets/project4_desktop.png");
             background-size: cover;
-            // background-position: center center;
             width: 800px;
             height: 800px;
             position: relative; top: -30%; right: 70%;
@@ -96,11 +94,10 @@ h3{
         }
     }
     .visuals2{
-        // background:url("../assets/project4_title.png");
+      
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-        // border: 1px solid white;
         margin-top: 250px;
         width: 400px;
         height: 100px;
@@ -109,39 +106,158 @@ h3{
     }
 }
 
-// .visuals{
-//     position: relative;
-//     background-color: blue;
-//     .project3Visuals1{
-//         border: 1px solid white;
-//         width: 400px;
-//         height: 400px;
-//         position: relative; left: 10%;
-//         transform: rotate(45deg);
-//         overflow: hidden;
-//         .project3background{
-//             // background:url("../assets/project4_desktop.png");
-//             background-size: cover;
-//             // background-position: center center;
-//             width: 800px;
-//             height: 800px;
-//             position: relative; top: -30%; right: 70%;
-//             transform: rotate(-45deg);
-//         }
-//     }
-//     .project3Visuals2{
-//         // background:url("../assets/project4_title.png");
-//         background-size: contain;
-//         background-position: center center;
-//         background-repeat: no-repeat;
-//         // border: 1px solid white;
-//         margin-top: 250px;
-//         width: 400px;
-//         height: 100px;
-//         position: absolute;
-//         // transform: rotate(45deg);
-//     }
-// }
+.visuals{
+    .project5Visuals1{
+         background:url("../assets/project5_mobile1.png");
+         background-size: contain;
+         background-position: -100px;
+        
+        //  transform: rotate(20deg);
+        .project5background{
+            background:url("../assets/project5_mobile2.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            // background-size: cover;
+           
+            // width: 800px;
+            // height: 800px;
+
+        }
+    }
+    .project5Visuals2{
+
+        // background-color: #00578c;
+        
+        // margin-top: 250px;
+        // text-align: center;
+
+        h2{
+            // font-family: 'Shrikhand', cursive;
+            // font-size: 2.5rem;
+            // color: $mainWhite;
+            // margin: 15px auto;
+        }
+
+
+    }
+} //project 4
+
+
+.visuals{
+   
+    .project6Visuals1{
+        background:url("../assets/project6_desktop.png");
+
+    }
+    .project6Visuals2{
+        background:url("../assets/project6_title.png");
+        background-color: #00578c;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        // border: 1px solid white;
+        margin-top: 250px;
+        text-align: center;
+
+
+
+
+    }
+} //project 6
+
+
+.visuals{
+   
+    .project4Visuals1{
+        
+        .project4background{
+            background:url("../assets/project4_desktop.png");
+            background-size: cover;
+           
+            width: 800px;
+            height: 800px;
+
+        }
+    }
+    .project4Visuals2{
+
+        background-color: #00578c;
+        
+        margin-top: 250px;
+        text-align: center;
+
+        h2{
+            font-family: 'Shrikhand', cursive;
+            font-size: 2.5rem;
+            color: $mainWhite;
+            margin: 15px auto;
+        }
+
+
+    }
+} //project 4
+
+.visuals{
+   
+    .project3Visuals1{
+        
+        .project3background{
+            background:url("../assets/project3_desktop.png");
+            background-size: cover;
+            background-position: -300px -100px;
+            background-repeat: no-repeat;
+            width: 900px;
+            height: 700px;
+            transform: rotate(0deg);
+        }
+    }
+    .project3Visuals2{
+        background:url("../assets/project3_title.png");
+        background-color: rgb(119, 55, 10);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+       
+        margin-top: 250px;
+        text-align: center;
+   }
+
+}
+ //project 3
+
+.visuals{
+   
+    .project1Visuals1{
+        
+        .project1background{
+            background:url("../assets/project1_desktop.png");
+            background-size: cover;
+            background-position: -350px 00px;
+            background-repeat: no-repeat;
+            width: 900px;
+            height: 700px;
+            
+        }
+    }
+    .project1Visuals2{
+       
+        background-color:$mainBlack;
+        
+        margin-top: 250px;
+        text-align: center;
+
+        h2{
+            font-family: 'Italiana', serif;
+            font-size: 3rem;
+            color: $mainWhite;
+            margin: 15px auto;
+            text-transform: uppercase;
+        }
+
+
+    }
+} //project 1
 
 
 .project5Links a:hover{

@@ -930,11 +930,10 @@ h3 {
 
 .visuals {
   position: relative;
-  background-color: blue;
 }
 
 .visuals .visuals1 {
-  border: 1px solid white;
+  border: 1px solid #fff5f5;
   width: 400px;
   height: 400px;
   position: relative;
@@ -963,6 +962,97 @@ h3 {
   width: 400px;
   height: 100px;
   position: absolute;
+}
+
+.visuals .project5Visuals1 {
+  background: url("../assets/project5_mobile1.png");
+  background-size: contain;
+  background-position: -100px;
+}
+
+.visuals .project5Visuals1 .project5background {
+  background: url("../assets/project5_mobile2.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.visuals .project6Visuals1 {
+  background: url("../assets/project6_desktop.png");
+}
+
+.visuals .project6Visuals2 {
+  background: url("../assets/project6_title.png");
+  background-color: #00578c;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.visuals .project4Visuals1 .project4background {
+  background: url("../assets/project4_desktop.png");
+  background-size: cover;
+  width: 800px;
+  height: 800px;
+}
+
+.visuals .project4Visuals2 {
+  background-color: #00578c;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.visuals .project4Visuals2 h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2.5rem;
+  color: #fff5f5;
+  margin: 15px auto;
+}
+
+.visuals .project3Visuals1 .project3background {
+  background: url("../assets/project3_desktop.png");
+  background-size: cover;
+  background-position: -300px -100px;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 700px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.visuals .project3Visuals2 {
+  background: url("../assets/project3_title.png");
+  background-color: #77370a;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.visuals .project1Visuals1 .project1background {
+  background: url("../assets/project1_desktop.png");
+  background-size: cover;
+  background-position: -350px 00px;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 700px;
+}
+
+.visuals .project1Visuals2 {
+  background-color: #141414;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.visuals .project1Visuals2 h2 {
+  font-family: 'Italiana', serif;
+  font-size: 3rem;
+  color: #fff5f5;
+  margin: 15px auto;
+  text-transform: uppercase;
 }
 
 .project5Links a:hover {
