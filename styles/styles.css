@@ -592,14 +592,19 @@ nav,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills .skillsItem {
+  min-width: 300px;
   width: calc((100% / 3) - 20px);
 }
 
 .skills .skillsItem button,
 .skills .skillsItem ul {
+  white-space: nowrap;
+  word-wrap: none;
   font-family: "Quicksand", sans-serif;
   width: 100%;
 }
@@ -948,6 +953,13 @@ h3 {
   }
 }
 
+@media (max-width: 1300px) and (max-width: 1150px) {
+  .visuals .visuals1 {
+    position: relative;
+    left: 0%;
+  }
+}
+
 @media (max-width: 1300px) and (max-width: 1100px) {
   .projectText {
     width: 100%;
@@ -1154,7 +1166,7 @@ h3 {
 
 @media (max-width: 1300px) {
   .blogImage {
-    width: auto;
+    width: 100%;
   }
   .blogImage img {
     height: 100%;

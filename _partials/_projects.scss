@@ -305,6 +305,14 @@ h3{
         }
 }
 
+@media(max-width: 1150px){
+    .visuals{
+        .visuals1{
+            position: relative; left: 0%;      
+        }
+    }
+}
+
 @media (max-width: 1100px){
     .projectText{
         width: 100%;

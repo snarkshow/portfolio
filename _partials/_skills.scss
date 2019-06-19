@@ -8,11 +8,15 @@
 .skills{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .skillsItem{
     // margin: 10px;
+    min-width: 300px;
     width: calc((100% / 3) - 20px);
     button,
     ul{
+      white-space: nowrap;
+      word-wrap: none;
       font-family: $mainFont;
       width: 100%;
     }
@@ -37,6 +41,7 @@
       border: 1px solid $mainRed;
       color: $mainRed;
       display: block;
+      
       letter-spacing: 1px;
       padding: 5px 15px;
       &:hover{
@@ -63,6 +68,9 @@
 }
 
 @media(max-width: 720px){
+
+
+
   
 }
 @media(max-width: 500px){

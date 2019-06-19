@@ -24,7 +24,6 @@
 
 .blogImage{
     width: 275px;
-
 }
 
 .blog h2{
@@ -52,9 +51,8 @@
 @media(max-width: 1300px){
 
     .blogImage{
-        width: auto;
+        width: 100%;
     img{
-
         height: 100%;
     }
 }
