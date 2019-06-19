@@ -23,10 +23,9 @@
 }
 
 .blogImage{
-    // background-color: purple;
     width: 275px;
     img{
-        height: 200px;
+        // height: 200px;
     }
 }
 
@@ -51,9 +50,32 @@
     }
 }
 
+@media(max-width: 1300px){
+
+    .blogImage{
+        width: auto;
+    img{
+
+        height: 100%;
+    }
+}
+
+
+    .blogGrid{
+        .blogItem{
+            // flex-wrap: wrap;
+            // margin: 30px 10px;
+            // min-width: 300px;
+            width: calc(50% - 20px);
+        }
+    }
+
+}
+
 @media(max-width: 320px){
 
 .blogImage{
+    
     width: 300px;
     }
 

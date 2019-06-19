@@ -12,6 +12,11 @@
     }
 }
 
+
+.projectItem{
+    margin-top: 175px;
+}
+
 h3{
     @include headings($h3Size);
     margin: 20px 0;
@@ -47,13 +52,12 @@ h3{
 .introDescription{
     justify-content: space-between;
     .introScreen{
-        border: 20px solid #000;
-        border-radius: 20px;
-        box-shadow: 0px 0px 30px 10px $mainRed, 0px 0px 45px 15px $mainTeal, ;
+        // border: 20px solid #000;
+        // border-radius: 20px;
+        // box-shadow: 0px 0px 30px 10px $mainRed, 0px 0px 45px 15px $mainTeal, ;
         height: auto;
         margin: 20px 0;
-        width: auto;
-        padding: 3%;
+        // padding: %;
     }
 }
 
@@ -82,14 +86,15 @@ h3{
         border: 1px solid $mainWhite;
         width: 400px;
         height: 400px;
-        position: relative; left: 0%;
+        position: relative; left: 15%;
         transform: rotate(45deg);
         overflow: hidden;
+        box-shadow: 0px 0px 15px 5px $mainWhite;
         .visualsBackground{
             background-size: cover;
             width: 800px;
             height: 800px;
-            position: relative; top: -30%; right: 70%;
+            position: relative; top: -30%; right: 70%; 
             transform: rotate(-45deg);
         }
     }
@@ -101,7 +106,7 @@ h3{
         margin-top: 250px;
         width: 400px;
         height: 100px;
-        position: absolute;
+        position: absolute; left: 15%;
         // transform: rotate(45deg);
     }
 }
@@ -109,13 +114,14 @@ h3{
 .visuals{
     .project5Visuals1{
          background:url("../assets/project5_mobile1.png");
-         background-size: contain;
-         background-position: -100px;
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
         
         //  transform: rotate(20deg);
         .project5background{
             background:url("../assets/project5_mobile2.png");
-            background-size: contain;
+            background-size: 350px;
             background-position: center center;
             background-repeat: no-repeat;
             // background-size: cover;
@@ -126,19 +132,11 @@ h3{
         }
     }
     .project5Visuals2{
-
-        // background-color: #00578c;
-        
-        // margin-top: 250px;
-        // text-align: center;
-
-        h2{
-            // font-family: 'Shrikhand', cursive;
-            // font-size: 2.5rem;
-            // color: $mainWhite;
-            // margin: 15px auto;
-        }
-
+        background-color: greenyellow;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: auto;
+       
 
     }
 } //project 4
@@ -259,25 +257,40 @@ h3{
     }
 } //project 1
 
-
-.project5Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainTeal;
+.projectInfo{
+    .project5Tag{
+        color: $mainTeal;
+    }
+    .project5Links a:hover{
+        box-shadow: 0px 0px 30px 5px $mainTeal;
+    }
+    .project6Tag{
+        color: $mainRed;
+    }
+    .project6Links a:hover{
+        box-shadow: 0px 0px 30px 5px $mainRed;
+    }
+    .project4Tag{
+        color: $mainTeal;
+    }
+    .project4Links a:hover{
+        box-shadow: 0px 0px 30px 5px $mainTeal;
+    }
+    .project3Tag{
+        color: $mainRed;
+    }
+    .project3Links a:hover{
+        box-shadow: 0px 0px 30px 5px $mainRed;
+    }
+    .project1Tag{
+        color: $mainTeal;
+    }
+    .project1Links a:hover{
+        box-shadow: 0px 0px 30px 5px $mainTeal;
+    }
 }
 
 
-.project6Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainRed;
-}
-
-
-.project4Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainTeal;
-}
-
-
-.project1Links a:hover{
-    box-shadow: 0px 0px 30px 5px $mainRed;
-}
 
 @media (max-width: 1300px){
 
@@ -314,57 +327,6 @@ h3{
         margin: 0 auto;
     }
 
-     .project5{
-        .project5Mobile1{
-            position: absolute; bottom: 0%; right: 25%;
-
-        }
-        .project5Mobile2{
-            position: absolute; bottom: 10%; right: 60%;
-        }
-        .project5Laptop{
-            position: relative; right: -65%;
-        }
-    }
-    
-    .project6{
-        .project6Mobile{      
-            position: absolute; bottom: 10%; right: 25%;
-        }
-        .project6Laptop{
-            position: relative; right: -65%;
-        }
-    }
-    
-    .project4{  
-        .project4Mobile{    
-            position: absolute; bottom: 10%; right: 25%;
-        }
-        .project4Laptop{
-            position: relative; right: -65%;
-    }
-    }
-
-    .project3{
-
-    .project3Mobile{
-         position: absolute; bottom: 10%; right: 25%;
-    }
-    .project3Laptop{
-        position: relative; right: -65%;
-    }
-    }
-    .project1{
-
-    .project1Mobile{
-         position: absolute; bottom: 10%; right: 25%;
-    }
-    .project1Laptop{
-        position: relative; right: -70%;
-    }
-    }
-
-    
 }
 
 
@@ -389,7 +351,7 @@ h3{
             // border: 1px solid white;
             width: 350px;
             height: 350px;
-            
+            left: 0%;
         }
         .visuals2{
 
@@ -397,10 +359,11 @@ h3{
             margin-top: 250px;
             width: 350px;
             height: 100px;
-            
+             left: 0%;
 
         }
     }
+
 
     .projectTags{
     display: flex;
@@ -484,7 +447,7 @@ h3{
         }
         .visuals2{
             border: 1px solid white;
-            margin-top: 100px;
+            margin-top: 150px;
             width: 225px;
             height: 100px;
         }

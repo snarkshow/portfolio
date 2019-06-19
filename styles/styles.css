@@ -312,12 +312,16 @@ h1 .h1Red {
   h1 {
     font-size: 2.07rem;
   }
+  h1 .h1Red {
+    display: block;
+    font-size: 0.83rem;
+  }
   .block {
     display: block;
   }
   .headerText {
     position: absolute;
-    bottom: 15 0px;
+    bottom: 100px;
   }
 }
 
@@ -841,6 +845,10 @@ nav,
   margin: 10px 0;
 }
 
+.projectItem {
+  margin-top: 175px;
+}
+
 h3 {
   color: #fff5f5;
   font-family: "Quicksand", sans-serif;
@@ -893,14 +901,8 @@ h3 {
 }
 
 .introDescription .introScreen {
-  border: 20px solid #000;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 30px 10px #E84855, 0px 0px 45px 15px #00B4A3;
-          box-shadow: 0px 0px 30px 10px #E84855, 0px 0px 45px 15px #00B4A3;
   height: auto;
   margin: 20px 0;
-  width: auto;
-  padding: 3%;
 }
 
 .projectDescription {
@@ -937,10 +939,12 @@ h3 {
   width: 400px;
   height: 400px;
   position: relative;
-  left: 0%;
+  left: 15%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 5px #fff5f5;
+          box-shadow: 0px 0px 15px 5px #fff5f5;
 }
 
 .visuals .visuals1 .visualsBackground {
@@ -962,19 +966,28 @@ h3 {
   width: 400px;
   height: 100px;
   position: absolute;
+  left: 15%;
 }
 
 .visuals .project5Visuals1 {
   background: url("../assets/project5_mobile1.png");
-  background-size: contain;
-  background-position: -100px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .visuals .project5Visuals1 .project5background {
   background: url("../assets/project5_mobile2.png");
-  background-size: contain;
+  background-size: 350px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.visuals .project5Visuals2 {
+  background-color: greenyellow;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
 .visuals .project6Visuals1 {
@@ -1055,24 +1068,49 @@ h3 {
   text-transform: uppercase;
 }
 
-.project5Links a:hover {
+.projectInfo .project5Tag {
+  color: #00B4A3;
+}
+
+.projectInfo .project5Links a:hover {
   -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
           box-shadow: 0px 0px 30px 5px #00B4A3;
 }
 
-.project6Links a:hover {
+.projectInfo .project6Tag {
+  color: #E84855;
+}
+
+.projectInfo .project6Links a:hover {
   -webkit-box-shadow: 0px 0px 30px 5px #E84855;
           box-shadow: 0px 0px 30px 5px #E84855;
 }
 
-.project4Links a:hover {
+.projectInfo .project4Tag {
+  color: #00B4A3;
+}
+
+.projectInfo .project4Links a:hover {
   -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
           box-shadow: 0px 0px 30px 5px #00B4A3;
 }
 
-.project1Links a:hover {
+.projectInfo .project3Tag {
+  color: #E84855;
+}
+
+.projectInfo .project3Links a:hover {
   -webkit-box-shadow: 0px 0px 30px 5px #E84855;
           box-shadow: 0px 0px 30px 5px #E84855;
+}
+
+.projectInfo .project1Tag {
+  color: #00B4A3;
+}
+
+.projectInfo .project1Links a:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px #00B4A3;
+          box-shadow: 0px 0px 30px 5px #00B4A3;
 }
 
 @media (max-width: 1300px) {
@@ -1115,56 +1153,6 @@ h3 {
   .visuals {
     margin: 0 auto;
   }
-  .project5 .project5Mobile1 {
-    position: absolute;
-    bottom: 0%;
-    right: 25%;
-  }
-  .project5 .project5Mobile2 {
-    position: absolute;
-    bottom: 10%;
-    right: 60%;
-  }
-  .project5 .project5Laptop {
-    position: relative;
-    right: -65%;
-  }
-  .project6 .project6Mobile {
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-  }
-  .project6 .project6Laptop {
-    position: relative;
-    right: -65%;
-  }
-  .project4 .project4Mobile {
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-  }
-  .project4 .project4Laptop {
-    position: relative;
-    right: -65%;
-  }
-  .project3 .project3Mobile {
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-  }
-  .project3 .project3Laptop {
-    position: relative;
-    right: -65%;
-  }
-  .project1 .project1Mobile {
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-  }
-  .project1 .project1Laptop {
-    position: relative;
-    right: -70%;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -1183,12 +1171,14 @@ h3 {
   .visuals .visuals1 {
     width: 350px;
     height: 350px;
+    left: 0%;
   }
   .visuals .visuals2 {
     border: 1px solid white;
     margin-top: 250px;
     width: 350px;
     height: 100px;
+    left: 0%;
   }
   .projectTags {
     display: -webkit-box;
@@ -1259,7 +1249,7 @@ h3 {
   }
   .visuals .visuals2 {
     border: 1px solid white;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 225px;
     height: 100px;
   }
@@ -1297,10 +1287,6 @@ h3 {
   width: 275px;
 }
 
-.blogImage img {
-  height: 200px;
-}
-
 .blog h2 {
   color: #fff5f5;
   font-family: "Quicksand", sans-serif;
@@ -1336,6 +1322,18 @@ h3 {
   letter-spacing: 3px;
   color: #E84855;
   margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+  .blogImage {
+    width: auto;
+  }
+  .blogImage img {
+    height: 100%;
+  }
+  .blogGrid .blogItem {
+    width: calc(50% - 20px);
+  }
 }
 
 @media (max-width: 320px) {
@@ -1512,6 +1510,7 @@ textarea::-webkit-input-placeholder {
   font-weight: lighter;
   letter-spacing: 3px;
   color: #141414;
+  font-weight: bolder;
 }
 
 input:-ms-input-placeholder,
@@ -1522,6 +1521,7 @@ textarea:-ms-input-placeholder {
   font-weight: lighter;
   letter-spacing: 3px;
   color: #141414;
+  font-weight: bolder;
 }
 
 input::-ms-input-placeholder,
@@ -1532,6 +1532,7 @@ textarea::-ms-input-placeholder {
   font-weight: lighter;
   letter-spacing: 3px;
   color: #141414;
+  font-weight: bolder;
 }
 
 input::placeholder,
@@ -1542,6 +1543,7 @@ textarea::placeholder {
   font-weight: lighter;
   letter-spacing: 3px;
   color: #141414;
+  font-weight: bolder;
 }
 
 input:focus,

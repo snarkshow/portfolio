@@ -49,6 +49,7 @@ textarea{
     &::placeholder{
         @include headings($h6Size);
         color: $mainBlack;
+        font-weight: bolder;
     }
     &:focus{
         box-shadow: 0 0 10px $mainTeal;
