@@ -321,7 +321,7 @@ h1 .h1Red {
   }
   .headerText {
     position: absolute;
-    bottom: 100px;
+    bottom: 125px;
   }
 }
 
@@ -660,6 +660,7 @@ nav,
   font-size: 2.49rem;
   font-weight: lighter;
   letter-spacing: 3px;
+  margin: 0 auto;
 }
 
 .projects h2 .h2Span {
@@ -847,6 +848,8 @@ h3 {
   font-size: 2.5rem;
   color: #fff5f5;
   margin: 15px auto;
+  word-wrap: none;
+  white-space: nowrap;
 }
 
 .visuals .project3Visuals1 .project3background {
@@ -958,6 +961,10 @@ h3 {
     position: relative;
     left: 0%;
   }
+  .visuals .visuals2 {
+    position: absolute;
+    left: 0%;
+  }
 }
 
 @media (max-width: 1300px) and (max-width: 1100px) {
@@ -1054,7 +1061,7 @@ h3 {
     height: 100px;
   }
   .projectItem {
-    margin-top: 150px;
+    margin-top: 125px;
   }
   h3 {
     margin: 0;
@@ -1071,10 +1078,18 @@ h3 {
     margin-top: 150px;
     width: 250px;
     height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .visuals .visuals2 h2 {
-    font-size: 2rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
   }
   .projectItem {
     margin-top: 150px;
