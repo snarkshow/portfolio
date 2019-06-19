@@ -25,7 +25,7 @@ nav,
 .siteNav{
     align-items: center;
     display: flex;
-    padding-right: 30px;
+    // padding-right: 30px;
 }
 
 .socialNav{
@@ -61,7 +61,17 @@ nav,
     display: none;
 }
 
-@media (max-width: 1200px){} 
+@media (max-width: 1000px){
+    .topBar{
+        a{
+            color: $mainWhite;
+            margin: 10px 5px;
+        &:hover{
+            color: $mainRed;
+        }
+    }
+}
+} 
 @media (max-width: 950px){
     .topBar{
         font-size: $paraSmall;
@@ -113,7 +123,6 @@ nav,
 
 @media (max-width: 320px){
     .socialNav{
-   
         position: fixed; top: 30%; right:-5%;
         z-index: 30;
 

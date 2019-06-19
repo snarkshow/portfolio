@@ -40,10 +40,18 @@
         font-size: $para;
         line-height: 1.75
     }
-    .bioSpan{
-            @include redSpan(2px);
+    .bioSpan a{
+            color: $mainRed;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            &:focus,
+            &:hover{
+                text-shadow: 1px 1px 1px $mainRed;
+            }
         }
+    .redBio{
+        color: $mainRed;
+    }
     
 }
 
