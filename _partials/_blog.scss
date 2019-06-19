@@ -31,6 +31,7 @@
     @include headings($h2Size);
     text-align: center;
     margin: 0 auto;
+    padding-top: 100px;
     .h2Span{
         @include redSpan(2px);
     }

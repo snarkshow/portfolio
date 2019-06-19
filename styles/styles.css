@@ -546,7 +546,7 @@ nav,
 }
 
 .bio .redBio {
-  color: #E84855;
+  display: block;
 }
 
 @media (max-width: 950px) {
@@ -579,246 +579,66 @@ nav,
   }
 }
 
-.skillsWrapper,
-.container {
+.skillsWrapper {
   background-color: #212121;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-top: 100px;
 }
 
-.container {
-  background-color: #212121;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (85px)[10];
-      grid-template-columns: repeat(10, 85px);
-  grid-column-gap: 5px;
-  width: 80%;
-  position: relative;
-  padding: 100px auto;
-}
-
-.item {
-  grid-column: span 2;
-  width: 200px;
-  padding: 0 0 231px 0;
-  -webkit-transform: rotate(-60deg) skewY(30deg);
-  transform: rotate(-60deg) skewY(30deg);
-  overflow: hidden;
-  visibility: hidden;
-  margin-top: -50px;
-}
-
-.item:nth-child(9n+1) {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-}
-
-.item:nth-child(9n+2) {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-}
-
-.item:nth-child(9n+3) {
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-}
-
-.item:nth-child(9n+4) {
-  -ms-grid-column: 7;
-      grid-column-start: 7;
-}
-
-.item:nth-child(9n+5) {
-  -ms-grid-column: 9;
-      grid-column-start: 9;
-}
-
-.item:nth-child(9n+6) {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-}
-
-.item:nth-child(9n+7) {
-  -ms-grid-column: 4;
-      grid-column-start: 4;
-}
-
-.item:nth-child(9n+8) {
-  -ms-grid-column: 6;
-      grid-column-start: 6;
-}
-
-.item:nth-child(9n) {
-  -ms-grid-column: 8;
-      grid-column-start: 8;
-}
-
-.hexagon {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(-30deg, #00B4A3 0%, transparent 65%);
-  -webkit-transform: skewY(-30deg) rotate(60deg);
-  transform: skewY(-30deg) rotate(60deg);
-  overflow: hidden;
-  text-align: center;
 }
 
-.hexagon p {
+.skills .skillsItem {
+  width: calc((100% / 3) - 20px);
+}
+
+.skills .skillsItem button,
+.skills .skillsItem ul {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+}
+
+.skillsTools li,
+.skillsLiteral li,
+.skillsUseless li {
+  border-bottom: 1px solid #E84855;
   color: #fff5f5;
-  font-size: 1.44rem;
-  text-shadow: 1px 1px 1px #212121;
+  padding: 10px;
+  width: 100%;
+}
+
+.skillsToolsButton,
+.skillsEssentialButton,
+.skillsNonessentialButton {
+  background-color: transparent;
+  border: 1px solid #E84855;
+  color: #E84855;
+  display: block;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+}
+
+.skillsToolsButton:hover,
+.skillsEssentialButton:hover,
+.skillsNonessentialButton:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px #fff5f5;
+          box-shadow: 0px 0px 10px 5px #fff5f5;
+}
+
+.skillsTools,
+.skillsLiteral,
+.skillsUseless {
+  display: none;
 }
 
 .item * {
   visibility: visible;
-}
-
-@media (max-width: 1100px) {
-  .container {
-    -ms-grid-columns: (100px)[8];
-        grid-template-columns: repeat(8, 100px);
-    width: 830px;
-  }
-  .item:nth-child(7n+1) {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  .item:nth-child(7n+2) {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-  }
-  .item:nth-child(7n+3) {
-    -ms-grid-column: 5;
-        grid-column-start: 5;
-  }
-  .item:nth-child(7n+4) {
-    -ms-grid-column: 7;
-        grid-column-start: 7;
-  }
-  .item:nth-child(7n+5) {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-  }
-  .item:nth-child(7n+6) {
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-  }
-  .item:nth-child(7n) {
-    -ms-grid-column: 6;
-        grid-column-start: 6;
-  }
-}
-
-@media (max-width: 850px) {
-  .container {
-    -ms-grid-columns: (100px)[6];
-        grid-template-columns: repeat(6, 100px);
-    width: 620px;
-  }
-  .item:nth-child(5n+1) {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  .item:nth-child(5n+2) {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-  }
-  .item:nth-child(5n+3) {
-    -ms-grid-column: 5;
-        grid-column-start: 5;
-  }
-  .item:nth-child(5n+4) {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-  }
-  .item:nth-child(5n) {
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-  }
-}
-
-@media (max-width: 720px) {
-  .container {
-    -ms-grid-columns: (100px)[4];
-        grid-template-columns: repeat(4, 100px);
-    width: 410px;
-  }
-  .item:nth-child(3n+1) {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  .item:nth-child(3n+2) {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-  }
-  .item:nth-child(3n) {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    -ms-grid-columns: (100px)[3];
-        grid-template-columns: repeat(3, 100px);
-    width: 450px;
-  }
-  .item:nth-child(3n+1) {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  .item:nth-child(3n+2) {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-  }
-  .item:nth-child(3n) {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    -ms-grid-columns: (100px)[1];
-        grid-template-columns: repeat(1, 100px);
-    width: 200px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hexagon {
-    margin-right: 50px;
-  }
-  .item:nth-child(1n) {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-  }
-  .item {
-    grid-column: span 2;
-    width: 100px;
-    padding: 0 0 231px 0;
-    -webkit-transform: rotate(-60deg) skewY(30deg);
-    transform: rotate(-60deg) skewY(30deg);
-    overflow: hidden;
-    visibility: hidden;
-    margin-top: -100px;
-  }
 }
 
 .projects {
@@ -1302,6 +1122,7 @@ h3 {
   letter-spacing: 3px;
   text-align: center;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .blog h2 .h2Span {

@@ -1,68 +1,55 @@
-.skillsWrapper,
-.container{
+.skillsWrapper{
     background-color: $darkGrey;
     margin: 0 auto;
-    padding: 60px 0;
-}
-
-.container{   
-    background-color: $darkGrey;
-    justify-content:center;
-    display: grid;
-    grid-template-columns: repeat(10, 85px);
-    grid-column-gap: 5px;
-    width: 80%;
-
-    position: relative;
-    padding: 100px auto;
+    padding-top: 100px;
 
 }
 
-.item{
-  grid-column: span 2;
-  width: 200px;
-  padding: 0 0 231px 0;
-  -o-transform: rotate(-60deg) skewY(30deg);
-  -moz-transform: rotate(-60deg) skewY(30deg);
-  -webkit-transform: rotate(-60deg) skewY(30deg);
-  -ms-transform: rotate(-60deg) skewY(30deg);
-  transform: rotate(-60deg) skewY(30deg);
-  overflow: hidden;
-  visibility: hidden;
-  margin-top: -50px; 
-}
-
-.item:nth-child(9n+1){ grid-column-start: 1;}
-.item:nth-child(9n+2){ grid-column-start: 3;}
-.item:nth-child(9n+3){ grid-column-start: 5;}
-.item:nth-child(9n+4){ grid-column-start: 7;}
-.item:nth-child(9n+5){ grid-column-start: 9;}
-.item:nth-child(9n+6){ grid-column-start: 2;}
-.item:nth-child(9n+7){ grid-column-start: 4;}
-.item:nth-child(9n+8){ grid-column-start: 6;}
-.item:nth-child(9n){ grid-column-start: 8;}
-
-.hexagon{
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    position: absolute; top: 0; left: 0;
-    width: 100%;
-    background: linear-gradient(-30deg, $mainTeal 0%, transparent 65%);
-    -o-transform: skewY(-30deg) rotate(60deg);
-    -moz-transform: skewY(-30deg) rotate(60deg);
-    -webkit-transform: skewY(-30deg) rotate(60deg);
-    -ms-transform: skewY(-30deg) rotate(60deg);
-    transform: skewY(-30deg) rotate(60deg);
-    overflow: hidden;
-    text-align: center;
-    p{
-        color: $mainWhite;
-        font-size: $h5Size;
-        text-shadow: 1px 1px 1px $darkGrey;
+.skills{
+  display: flex;
+  justify-content: center;
+  .skillsItem{
+    // margin: 10px;
+    width: calc((100% / 3) - 20px);
+    button,
+    ul{
+      font-family: $mainFont;
+      width: 100%;
     }
-  
+  }
+}
+
+.skillsTools li,
+.skillsLiteral li,
+.skillsUseless li{
+  border-bottom: 1px solid $mainRed;
+  color: $mainWhite;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.skillsToolsButton,
+.skillsEssentialButton,
+.skillsNonessentialButton{
+    background-color: transparent;
+    // border: none;
+      border: 1px solid $mainRed;
+      color: $mainRed;
+      display: block;
+      letter-spacing: 1px;
+      padding: 5px 15px;
+      &:hover{
+        
+        box-shadow: 0px 0px 10px 5px $mainWhite;
+      }
+  }
+
+
+.skillsTools,
+.skillsLiteral,
+.skillsUseless{
+  display: none;
 }
     
 .item *{
@@ -70,72 +57,18 @@
 }
 
 @media(max-width: 1100px){
-  .container{
-    grid-template-columns: repeat(8, 100px);
-    width: 830px
-  }
-.item:nth-child(7n+1){ grid-column-start: 1;}
-.item:nth-child(7n+2){ grid-column-start: 3;}
-.item:nth-child(7n+3){ grid-column-start: 5;}
-.item:nth-child(7n+4){ grid-column-start: 7;}
-.item:nth-child(7n+5){ grid-column-start: 2;}
-.item:nth-child(7n+6){ grid-column-start: 4;}
-.item:nth-child(7n){ grid-column-start: 6;}
 }
-
 @media(max-width: 850px){
-  .container{
-    grid-template-columns: repeat(6, 100px);
-    width: 620px
-  }
-.item:nth-child(5n+1){ grid-column-start: 1;}
-.item:nth-child(5n+2){ grid-column-start: 3;}
-.item:nth-child(5n+3){ grid-column-start: 5;}
-.item:nth-child(5n+4){ grid-column-start: 2;}
-.item:nth-child(5n){ grid-column-start: 4;}
+ 
 }
 
 @media(max-width: 720px){
-  .container{
-  grid-template-columns: repeat(4, 100px);
-    width: 410px;
-  }
-  .item:nth-child(3n+1){ grid-column-start: 1;}
-  .item:nth-child(3n+2){ grid-column-start: 3;}
-  .item:nth-child(3n){ grid-column-start: 2;}
+  
 }
 @media(max-width: 500px){
-  .container{
-  grid-template-columns: repeat(3, 100px);
-    width: 450px;
-  }
-  .item:nth-child(3n+1){ grid-column-start: 1;}
-  .item:nth-child(3n+2){ grid-column-start: 3;}
-  .item:nth-child(3n){ grid-column-start: 2;}
+  
 }
 @media(max-width: 320px){
-  .container{
-    grid-template-columns: repeat(1, 100px);
-    width: 200px;
-    justify-content: center;
-  }
-  .hexagon{
-    margin-right: 50px;
-  }
-
-  .item:nth-child(1n){ grid-column-start: 1;}
-
-  .item{
-  grid-column: span 2;
-  width: 100px;
-  padding: 0 0 231px 0;
-  -o-transform: rotate(-60deg) skewY(30deg);
-  -moz-transform: rotate(-60deg) skewY(30deg);
-  -webkit-transform: rotate(-60deg) skewY(30deg);
-  -ms-transform: rotate(-60deg) skewY(30deg);
-  transform: rotate(-60deg) skewY(30deg);
-  overflow: hidden;
-  visibility: hidden;
-  margin-top: -100px; 
+ 
 }
-  }
+
