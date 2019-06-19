@@ -24,9 +24,7 @@
 
 .blogImage{
     width: 275px;
-    img{
-        // height: 200px;
-    }
+
 }
 
 .blog h2{
@@ -70,6 +68,12 @@
         }
     }
 
+}
+
+@media(max-width: 500px){
+    .blog h2{
+        padding-top: 100px;
+}
 }
 
 @media(max-width: 320px){

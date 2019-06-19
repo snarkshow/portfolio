@@ -392,6 +392,9 @@ h3{
 } 
 @media (max-width: 550px){
    
+    .projects{
+        padding-bottom: 170px;
+    }
 
     .visuals{  
         .visuals1{
@@ -430,6 +433,10 @@ h3{
             margin-top: 150px;
             width: 250px;
             height: 100px;
+            h2{
+                font-size: 2rem;
+                margin: 10px 0;
+            }
         }
     }
 
@@ -454,6 +461,8 @@ h3{
     }
 
     .projectItem{
-        margin-top: 150px;
+        margin-top: 100px 0 50px 0;
     }
 }
+
+
