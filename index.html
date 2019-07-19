@@ -27,20 +27,18 @@
                 <button class="toggle-button closeMenu">see less</button>
                 <nav>
                     <ul class="siteNav desktopNav">
-                        <li><a href="#">Let's Go Home</a> </li>
-                        <li><a href="#about">My Whole Deal</a></li>
-                        <li><a href="#work">Latest & Greatest</a></li>
-                        <li><a href="#blog">Shower Thoughts</a></li>
-                        <li><a href="#contact">Can We Talk?</a></li>
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul class="siteNav mobileMenu">
-                        <li><a href="#">Let's Go Home</a> </li>
-                        <li><a href="#about">My Whole Deal</a></li>
-                        <li><a href="#work">Latest & Greatest</a></li>
-                        <li><a href="#blog">Shower Thoughts</a></li>
-                        <li><a href="#contact">Can We Talk?</a></li>
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -92,9 +90,9 @@
                         <h2>About Me
                             <span class="h2Span">(so what's your deal?)</span>
                         </h2>
-                        <p>I am a front-end web developer, currently enrolled in HackerYou's Web Development Immersive program.</p>
+                        <p>I am a front-end developer and a recent graduate of the HackerYou Web Development Immersive.</p>
                     
-                        <p>I want to build products and services that will make the internet (and the world!) easier to navigate. I am committed to writing precise and exacting code in service of clean and accessible design. I believe in doing more good than bad.</p>
+                        <p>I want to build products and services that will make the internet (and the world!) easier to navigate. I am committed to writing precise code in service of clean and accessible design. I believe in doing more good than bad.</p>
                     
                         <p>I'm also an ALA-accredited librarian! I spent 5 years working as a legal research librarian for Bay Street law
                             firms, where I conducted research
@@ -107,7 +105,32 @@
                 <div class="aboutOverlay"></div>
                 <div class="aboutOverlay2"></div>
             </div>
-
+            <div class="skillsWrapper">
+                <div class="wrapper">
+                    <h2>My Skills</h2>
+                
+                    <div class="skillFlex">
+                        <ul class="skillsItem">
+                            <li>HTML5</li>
+                            <li>CSS, Sass</li>
+                            <li>JavaScript, jQuery, React</li>
+                            <li>Git, Github, Terminal</li>
+                        </ul>
+                        <ul class="skillsItem">
+                            <li>Firebase</li>
+                            <li>Jekyll, Hugo</li>
+                            <li>Legal Research</li>
+                            <li>Business Development</li>
+                        </ul>
+                        <ul class="skillsItem">
+                            <li>Project Management</li>
+                            <li>Certified CAPM</li>
+                            <li>Information Managment</li>
+                            <li>Teaching / Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="projects wrapper" id="work">
                 <div class="projectDescription introDescription">
                     <h2>My Work
@@ -288,7 +311,7 @@
                 </div>
                 
             </div>
-            <div class="skillsWrapper wrapper">
+            <!-- <div class="skillsWrapper wrapper">
                 <div class="skills">
                     <div class="skillsItem">
                         <button class="skillsToolsButton">Essential Tools</button>
@@ -312,23 +335,23 @@
                             <li>Responsive Design</li>
                             <li>Mobile-first Design</li>
                             <!-- <li></li> -->
-                        </ul>
+                        <!-- </ul>
                     </div>
                     <div class="skillsItem">
                         <button class="skillsNonessentialButton">Non-Essential Skills</button>
                         <ul class="skillsItem skillsUseless">
-                            <!-- <li>Getting into Berghain</li> -->
                             <li>Snake parenting</li>
+                            <li>Getting into Berghain</li>
                             <li>200lb deadlift</li>
                             <li>Krav Maga Level 2</li>
                             <li>Testing the HackerYou elevator</li>
                         </ul>
-                    </div>
+                    </div> --> 
                     
                      
                 </div>
             </div>
-            <div class="blog wrapper" id="blog"> 
+            <!-- <div class="blog wrapper" id="blog"> 
                 <h2>My Blog<span class="h2Span">(I've been blogging at Medium!)</span>
                 </h2>
                 <ul class="blogGrid">
@@ -368,7 +391,7 @@
                             <div class="blogTitle">
                                 <h4>4 Women Who Guided <br>Me Into Tech</h4>
                                 <h5>April 28, 2019</h5>
-                                <p>A post some amazing women who inspired me to make the move into tech.</p>
+                                <p>A post about some amazing women who inspired me to make the move into tech.</p>
                             </div>
                         </a> 
                     </li>
@@ -401,7 +424,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </main>
         <footer>
             <div class="contact wrapper" id="contact">
@@ -431,7 +454,10 @@
                         </li>
             
                     </ul>
+                    
                 </div>
+               
+          
                 <form action="http://www.focuspocus.io/magic/laura.hw.chuang@gmail.com" method="POST">
                     <input type="email" name="email" placeholder="yourName@yourEmail.com">
                     <textarea 
@@ -450,10 +476,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
         <script>
             $(function () {
-            //    $('a[href^="#"]').SmoothScroll({
-            //         duration: 2000,
-            //         easing: 'linear'
-            //     }),
+
                 $(window).scroll(function () {
                     let scroll = $(window).scrollTop();
                     if (scroll >= 500) {
@@ -469,7 +492,7 @@
                        $(".closeMenu").show();
                    });
                 $(".closeMenu").on("click", function () {
-                    // console.log(`clicked`);
+
                      $(".mobileMenu").slideToggle("slow");
                        $(".closeMenu").hide();
                        $(".openMenu").show();
@@ -484,12 +507,6 @@
                     $(".skillsUseless").slideToggle("slow");
                  
                 });
-                // $(".drop-down a").on("click", function () {
-                //     $(".drop-down").slideToggle("slow");
-                //     $(".close").hide();
-                //     $(".open").show();
-                // });
-
             });   
         </script>
         <script>

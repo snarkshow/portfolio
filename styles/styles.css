@@ -585,7 +585,17 @@ nav,
   padding-top: 100px;
 }
 
-.skills {
+.skillsWrapper h2 {
+  color: #fff5f5;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.49rem;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skillFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,44 +606,24 @@ nav,
       flex-wrap: wrap;
 }
 
-.skills .skillsItem {
-  min-width: 300px;
-  width: calc((100% / 3) - 20px);
+.skillFlex .skillsItem {
+  min-width: 250px;
+  width: calc(100% / 3);
 }
 
-.skills .skillsItem button,
-.skills .skillsItem ul {
+.skillFlex .skillsItem button,
+.skillFlex .skillsItem ul {
   white-space: nowrap;
   word-wrap: none;
   font-family: "Quicksand", sans-serif;
   width: 100%;
 }
 
-.skillsTools li,
-.skillsLiteral li,
-.skillsUseless li {
+.skillsItem li {
   border-bottom: 1px solid #E84855;
   color: #fff5f5;
   padding: 10px;
   width: 100%;
-}
-
-.skillsToolsButton,
-.skillsEssentialButton,
-.skillsNonessentialButton {
-  background-color: transparent;
-  border: 1px solid #E84855;
-  color: #E84855;
-  display: block;
-  letter-spacing: 1px;
-  padding: 5px 15px;
-}
-
-.skillsToolsButton:hover,
-.skillsEssentialButton:hover,
-.skillsNonessentialButton:hover {
-  -webkit-box-shadow: 0px 0px 10px 5px #fff5f5;
-          box-shadow: 0px 0px 10px 5px #fff5f5;
 }
 
 .skillsTools,
@@ -644,6 +634,32 @@ nav,
 
 .item * {
   visibility: visible;
+}
+
+@media (max-width: 850px) {
+  .skillFlex .skillsItem {
+    min-width: 250px;
+    width: calc(100% / 2);
+  }
+  .skillFlex .skillsItem ul {
+    white-space: nowrap;
+    word-wrap: none;
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillFlex .skillsItem {
+    min-width: 250px;
+    width: calc(100%);
+  }
+  .skillFlex .skillsItem ul {
+    white-space: nowrap;
+    word-wrap: none;
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+  }
 }
 
 .projects {
@@ -672,7 +688,7 @@ nav,
 }
 
 .projectItem {
-  margin-top: 175px;
+  margin-top: 100px;
 }
 
 h3 {

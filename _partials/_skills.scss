@@ -2,17 +2,24 @@
     background-color: $darkGrey;
     margin: 0 auto;
     padding-top: 100px;
-
+ 
+    
+    h2{
+       @include headings($h2Size); 
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
-.skills{
+
+.skillFlex{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   .skillsItem{
     // margin: 10px;
-    min-width: 300px;
-    width: calc((100% / 3) - 20px);
+    min-width: 250px;
+    width: calc(100% / 3);
     button,
     ul{
       white-space: nowrap;
@@ -23,9 +30,7 @@
   }
 }
 
-.skillsTools li,
-.skillsLiteral li,
-.skillsUseless li{
+.skillsItem li{
   border-bottom: 1px solid $mainRed;
   color: $mainWhite;
   padding: 10px;
@@ -33,22 +38,22 @@
 
 }
 
-.skillsToolsButton,
-.skillsEssentialButton,
-.skillsNonessentialButton{
-    background-color: transparent;
-    // border: none;
-      border: 1px solid $mainRed;
-      color: $mainRed;
-      display: block;
+// .skillsToolsButton,
+// .skillsEssentialButton,
+// .skillsNonessentialButton{
+//     background-color: transparent;
+//     // border: none;
+//       border: 1px solid $mainRed;
+//       color: $mainRed;
+//       display: block;
       
-      letter-spacing: 1px;
-      padding: 5px 15px;
-      &:hover{
+//       letter-spacing: 1px;
+//       padding: 5px 15px;
+//       &:hover{
         
-        box-shadow: 0px 0px 10px 5px $mainWhite;
-      }
-  }
+//         box-shadow: 0px 0px 10px 5px $mainWhite;
+//       }
+//   }
 
 
 .skillsTools,
@@ -64,7 +69,22 @@
 @media(max-width: 1100px){
 }
 @media(max-width: 850px){
- 
+  .skillFlex{
+
+  .skillsItem{
+    // margin: 10px;
+    min-width: 250px;
+    width: calc(100% / 2);
+    
+    ul{
+      white-space: nowrap;
+      word-wrap: none;
+      font-family: $mainFont;
+      width: 100%;
+    }
+  }
+}
+
 }
 
 @media(max-width: 720px){
@@ -74,7 +94,21 @@
   
 }
 @media(max-width: 500px){
-  
+    .skillFlex{
+
+  .skillsItem{
+    // margin: 10px;
+    min-width: 250px;
+    width: calc(100%);
+    
+    ul{
+      white-space: nowrap;
+      word-wrap: none;
+      font-family: $mainFont;
+      width: 100%;
+    }
+  }
+}
 }
 @media(max-width: 320px){
  
