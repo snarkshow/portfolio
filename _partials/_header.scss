@@ -1,8 +1,8 @@
-header{
-    background-color: $darkGrey;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
+header {
+  background-color: $darkGrey;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
 }
 
 // .headerOverlay{
@@ -19,74 +19,75 @@ header{
 //     z-index: 10;
 // }
 
-.headerText{
-    position: absolute; bottom: 250px;
+.headerText {
+  position: absolute;
+  bottom: 250px;
 }
 
-h1{
-    color: $mainWhite;
-    font-family: $mainFont;
-    font-size: $h1Size;
-    font-weight: lighter;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    .h1Red{
-        display: block;
-        font-size: $para;
-        letter-spacing: 3px;
-        margin: 10px 0;
-    }
-}
-
-.tagline{
+h1 {
+  color: $mainWhite;
+  font-family: $mainFont;
+  font-size: $h1Size;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  .h1Red {
     display: block;
     font-size: $para;
     letter-spacing: 3px;
     margin: 10px 0;
-    text-transform: uppercase;
+  }
 }
 
-.logo{
-    align-items: center;
-    border: 3px solid $mainRed;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    margin: 20px;
-    transform: rotate(45deg);
-    width: 40px;
-    p{
-        @include headings($para);
-        color: $mainRed;
-        transform: rotate(-45deg);
-    }
+.tagline {
+  display: block;
+  font-size: $para;
+  letter-spacing: 3px;
+  margin: 10px 0;
+  text-transform: capitalize;
 }
 
-@media (max-width: 690px){
-    .h1span{
-        display: block;
-    }
-    .headerText{
-        position: absolute; bottom: 200px;
-    }
+.logo {
+  align-items: center;
+  border: 3px solid $mainRed;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 20px;
+  transform: rotate(45deg);
+  width: 40px;
+  p {
+    @include headings($para);
+    color: $mainRed;
+    transform: rotate(-45deg);
+  }
 }
 
-@media(max-width: 480px){
+@media (max-width: 690px) {
+  .h1span {
+    display: block;
+  }
+  .headerText {
+    position: absolute;
+    bottom: 200px;
+  }
+}
 
-    h1{
-        font-size: $h3Size;
-        .h1Red{
-        display: block;
-        font-size: $paraSmall;
-  
+@media (max-width: 480px) {
+  h1 {
+    font-size: $h3Size;
+    .h1Red {
+      display: block;
+      font-size: $paraSmall;
     }
-    }
+  }
 
-    .block{
-        display: block;
-    }
+  .block {
+    display: block;
+  }
 
-    .headerText{
-        position: absolute; bottom: 125px;
-    }
+  .headerText {
+    position: absolute;
+    bottom: 125px;
+  }
 }
